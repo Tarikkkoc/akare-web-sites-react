@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "../../img/up.svg";
+
 import { Link } from "react-router-dom";
 
 const Footer = ({ sirketler }) => {
@@ -7,15 +7,19 @@ const Footer = ({ sirketler }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <div className="bg-gray-900 pt-5 pb-5 ">
+    <div className="bg-gray-900 pt-5 pb-5">
       <div className="w-full flex justify-center pt-2">
         <div onClick={handleScrollTop}>
-          <img className="w-8 h-8 cursor-pointer " src={Icon} alt="" />
+          <img
+            className="w-8 h-8 cursor-pointer "
+            src="https://www.svgrepo.com/show/355496/arrow-angle-up-circle.svg"
+            alt=""
+          />
         </div>
       </div>
-      <div className="flex gap-5 pl-10 pr-10 pt-2 ">
-        <div className="flex flex-col w-4/12 text-gray-600" id="adres">
-          <p>
+      <div className="flex gap-5 pl-10 pr-10 pt-10 flex items-center justify-center footer">
+        <div className=" gap-2 flex-col w-4/12 text-gray-600" id="adres">
+          <p className="w-full">
             İstanbul Üniversitesi Avcılar Kampüsü, TEKNOKENT Z-15 Avcılar /
             İstanbul
           </p>
