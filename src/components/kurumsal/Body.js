@@ -12,7 +12,7 @@ const Body = () => {
     switch (selected) {
       case "hakkimizda":
         return (
-          <div className="text-sm font-light text-gray-600 pt-5 gap-2  pb-10">
+          <div className="text-sm font-dosis font-light text-gray-600 pt-5 gap-2  pb-10">
             <p>
               1989 yılından beri sektörde olan firmamız, yıllar içinde yazılımın
               bir çok dalında başarılı uygulamalar yaparak, her zaman en iyiyi
@@ -184,13 +184,13 @@ const Body = () => {
 
   return (
     <div className="menu flex flex-col pr-32 pl-32 hakkimizda">
-      <ul className="flex gap-5 mt-5 text-blue-500 font-light hakkimizda2">
+      <ul className="flex gap-1 mt-5 text-blue-500 font-light hakkimizda2 ">
         <li
           id={selected === "hakkimizda" ? "selected" : ""}
           className={` cursor-pointer ${
             selected === "hakkimizda"
-              ? "border-x-2 border-t-2 border-blue-200"
-              : ""
+              ? "rounded-lg p-2 bg-blue-300 text-white text-base border-blue-200"
+              : "bg-blue-400 text-gray-700 rounded-lg p-2 hover:bg-blue-100"
           }`}
           onClick={() => handleClick("hakkimizda")}
         >
@@ -199,7 +199,9 @@ const Body = () => {
         <li
           id={selected === "vizyon" ? "selected" : ""}
           className={` cursor-pointer ${
-            selected === "vizyon" ? "border-x-2 border-t-2 border-blue-200" : ""
+            selected === "vizyon"
+              ? "rounded-lg p-2 bg-blue-300 text-white text-base border-blue-200"
+              : "bg-blue-400 text-gray-700 rounded-lg p-2 hover:bg-blue-100"
           }`}
           onClick={() => handleClick("vizyon")}
         >
@@ -209,8 +211,8 @@ const Body = () => {
           id={selected === "politika" ? "selected" : ""}
           className={` cursor-pointer ${
             selected === "politika"
-              ? "border-x-2 border-t-2 border-blue-200"
-              : ""
+              ? "rounded-lg p-2 bg-blue-300 text-white text-base border-blue-200"
+              : "bg-blue-400 text-gray-700 rounded-lg p-2 hover:bg-blue-100"
           }`}
           onClick={() => handleClick("politika")}
         >
@@ -219,7 +221,9 @@ const Body = () => {
         <li
           id={selected === "arge" ? "selected" : ""}
           className={` cursor-pointer ${
-            selected === "arge" ? "border-x-2 border-t-2 border-blue-200" : ""
+            selected === "arge"
+              ? "rounded-lg p-2 bg-blue-300 text-white text-base border-blue-200"
+              : "bg-blue-400 text-gray-700 rounded-lg p-2 hover:bg-blue-100"
           }`}
           onClick={() => handleClick("arge")}
         >
@@ -229,8 +233,8 @@ const Body = () => {
           id={selected === "kurumsal" ? "selected" : ""}
           className={` cursor-pointer ${
             selected === "kurumsal"
-              ? "border-x-2 border-t-2 border-blue-200"
-              : ""
+              ? "rounded-lg p-2 bg-blue-300 text-white text-base border-blue-200"
+              : "bg-blue-400 text-gray-700 rounded-lg p-2 hover:bg-blue-100"
           }`}
           onClick={() => handleClick("kurumsal")}
         >

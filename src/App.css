@@ -1,11 +1,13 @@
+
 @media (max-width: 768px){
     .toggle{
         display: block;
+        float: right;
     }
     .dropdown{
 position: relative;
 top: px;
-right: px;
+right: 0px;
 font-size: small;
     }
     .toggle button{
@@ -14,13 +16,7 @@ font-size: small;
     .nav{
         display: none;
     }
-    .navImg{
-        width: 65%;
-    }
-    .navbar{
-        justify-content: space-around;
-        gap: 8px;
-    }
+   
     .photoDiv{
         display: flex;
         flex-direction: column;
@@ -30,6 +26,8 @@ font-size: small;
     .sirketler{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .hakkimizda{
         padding-right: 20px;
@@ -55,6 +53,9 @@ font-size: small;
         justify-content: center;
         align-items: center;
         gap: 15px;
+    }
+    .a{
+        font-family: Dos;
     }
 }
 

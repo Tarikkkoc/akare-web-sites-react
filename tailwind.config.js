@@ -4,5 +4,10 @@ module.exports = {
   theme: {
     extend: {},
   },
+  theme: {
+    fontFamily: {
+      dosis: ["Dosis", "ui-sans-serif", "system-ui"],
+    },
+  },
   plugins: [],
 };
