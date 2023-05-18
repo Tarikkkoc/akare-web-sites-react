@@ -1,23 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Sirketler from "./Sirketler";
 import Hakkimizda from "./Hakkimizda";
 
 const Anasayfa = ({ sirketler }) => {
+  const [matrixRows, setMatrixRows] = useState([]);
+
+  useEffect(() => {
+    const matrixCode1 = "REACTISAWESOME";
+    const matrixCode2 = "MICROSOFTDEVPOWER";
+    const matrixCode3 = "GOOGLECODEMASTERS";
+
+    const animationInterval = setInterval(() => {
+      setMatrixRows([
+        matrixCode1
+          .split("")
+          .map((char, index) => <span key={index}>{char}</span>),
+        matrixCode2
+          .split("")
+          .map((char, index) => <span key={index}>{char}</span>),
+        matrixCode3
+          .split("")
+          .map((char, index) => <span key={index}>{char}</span>),
+      ]);
+    }, 2000);
+
+    return () => clearInterval(animationInterval);
+  }, []);
   return (
     <div className="mt-0.5">
       <div className="bg-slate-200 menu-background bg-cover flex border-b-2 border-slate-300 photoDiv">
-        <div className="flex items-center justify-end ">
+        <div className="flex w-1/2 items-center justify-end ">
           <img
             src="https://akarebilisim.com.tr/images/cloud-servers.gif"
             className="min-h-[50px] h-[80%] "
           ></img>
         </div>
-        <div className="pr-32 flex items-center justify-center">
-          <img
-            className="min-h-[50px]"
-            src="https://akarebilisim.com.tr/images/projeler.gif"
-            alt=""
-          />
+        <div className="pr-32 w-1/2 flex items-center justify-center">
+          <div className="matrix-container">
+            {matrixRows.map((row, index) => (
+              <div key={index} className="matrix-row">
+                {row}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <Sirketler sirketler={sirketler} />

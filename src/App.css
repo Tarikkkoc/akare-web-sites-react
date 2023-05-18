@@ -69,6 +69,26 @@ font-size: small;
     background-image: url("https://akarebilisim.com.tr/images/orta.jpg");
 }
 
+.matrix-container {
+    font-family: 'Courier New', monospace;
+    color: green;
+    /* Diğer stiller burada belirtilebilir */
+  }
+  
+  .matrix-row {
+    animation: matrix-row-animation 5s linear infinite;
+    display: flex;
+  }
+  
+  @keyframes matrix-row-animation {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+  }
+  
+  .matrix-row span {
+    margin-right: 5px;
+  }
+
   
   
   

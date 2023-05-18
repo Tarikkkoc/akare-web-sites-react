@@ -21,6 +21,7 @@ function App() {
       link: "akarecloud",
       statu: "CLOUD",
       title: "AKARECLOUD",
+      nick: "aKareCLOUD",
     },
     {
       img: "https://akarebilisim.com.tr/images/pentestLogo.png",
@@ -28,6 +29,7 @@ function App() {
       link: "akarepentest",
       statu: "PENTEST",
       title: "AKAREPENTEST",
+      nick: "aKarePENTEST",
     },
     {
       img: "https://akarebilisim.com.tr/images/logoTek.png",
@@ -35,6 +37,7 @@ function App() {
       link: "akareisg",
       statu: "ISG",
       title: "AKAREISG",
+      nick: "aKareISG",
     },
     {
       img: "https://akarebilisim.com.tr/images/aKareEDULogoIco.png",
@@ -42,6 +45,7 @@ function App() {
       link: "akareedu",
       statu: "EDU",
       title: "AKAREEDU",
+      nick: "aKareEDU",
     },
   ];
   return (

@@ -7,7 +7,7 @@ const Footer = ({ sirketler }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <div className="bg-gray-900 pt-5 pb-5">
+    <div className="bg-zinc-800 pt-12 pb-5">
       <div className="w-full flex justify-center pt-2">
         <div onClick={handleScrollTop}>
           <img
@@ -17,8 +17,11 @@ const Footer = ({ sirketler }) => {
           />
         </div>
       </div>
-      <div className="flex gap-5 pl-10 pr-10 pt-10 flex items-center justify-center footer">
-        <div className=" gap-2 flex-col w-4/12 text-gray-600" id="adres">
+      <div className="flex justify-around gap-5 px-24 mt-5 footer">
+        <div
+          className=" gap-2 text-base flex flex-col justify-center w-4/12 text-gray-600"
+          id="adres"
+        >
           <p className="w-full">
             İstanbul Üniversitesi Avcılar Kampüsü, TEKNOKENT Z-15 Avcılar /
             İstanbul
@@ -40,12 +43,12 @@ const Footer = ({ sirketler }) => {
           </div>
         </div>
         <div
-          className="w-4/12 flex flex-col justify-center items-center gap-5 text-blue-500 text-lg font-light"
+          className="w-4/12 flex flex-col items-center gap-1 text-blue-500 text-base font-light"
           id="sirketler"
         >
           {sirketler.map((sirket) => (
             <Link to={`/${sirket.link}`}>
-              <span className="text-center cursor-pointer">{sirket.title}</span>
+              <span className="text-center cursor-pointer">{sirket.nick}</span>
             </Link>
           ))}
         </div>
