@@ -12,14 +12,18 @@ const Hakkimizda = ({
       <div className="flex gap-5 hakkimizda2">
         <div id="onceGuvenlik" className="border-2 safety lg:w-1/2 p-5">
           <div>
-            <img src={onceGuvenlikImg} alt="" />
+            <img
+              className="min-h-[100px] h-[100px]"
+              src={onceGuvenlikImg}
+              alt=""
+            />
           </div>
           <div>
             <h3 className="text-orange-500 text-2xl font-normal mt-5 mb-2.5">
               {onceGuvenlikTitle}
             </h3>
           </div>
-          <div className="text flex flex-col gap-2 text-base text-gray-600">
+          <div className="text-sm leading-6 flex flex-col gap-2 text-gray-500">
             <p className="">
               Günümüzde bilgi toplumu olarak bize düşen bilgiyi korumak ve
               güvenli bir şekilde erişilmesini sağlamaktır.
@@ -45,14 +49,18 @@ const Hakkimizda = ({
         </div>
         <div id="akilliCozumler" className="border-2 safety w-1/2 p-5">
           <div className="flex justify-end">
-            <img src={akilliCozumlerImg} alt="" />
+            <img
+              className="min-h-[100px] h-[100px]"
+              src={akilliCozumlerImg}
+              alt=""
+            />
           </div>
           <div>
             <h3 className="text-right text-orange-500 text-2xl font-normal mt-5 mb-2.5">
               {akilliCozumlerTitle}
             </h3>
           </div>
-          <div className="text flex flex-col gap-2 text-base text-gray-600">
+          <div className="flex flex-col leading-6 gap-2 text-sm text-gray-500">
             <p className="text-right">
               Teknolojinin artık her yerde olduğu bu dönemde, veriye gerek mobil
               platformlardan gerek masaüstü uygulamalardan hızlıca erişmek artık

@@ -22,46 +22,45 @@ const Navi = () => {
     };
   }, []);
   return (
-    <div className="border-b-4 bg-slate-100 ">
-      <div className="flex justify-between items-center container mx-auto">
+    <div className="shadow-lg bg-slate-100 border-t-2 border-red-500">
+      <div className="flex justify-between px-8 items-center container mx-auto">
         <div className="flex-none  ">
           <Link to="/">
             <img
-              className="align-middle min-h-[60px]  "
+              className="align-middle min-h-[50px] h-6  "
               src="https://akarebilisim.com.tr/images/logoNew3.png"
               alt=""
             />
           </Link>
         </div>
-        <div className=" ">
-          <ul className="flex gap-3 px-2 nav items-center font-sans text-gray-500 shrink-1">
-            <Link to="/">
-              <li className="text-xs  hover:text-white hover:cursor-pointer grid place-items-center hover:bg-gray-400 h-14 cursor-pointer">
-                ANA SAYFA
-              </li>
-            </Link>
-            <Link to="/projelerimiz">
-              <li className="hover:text-white text-xs hover:cursor-pointer grid place-items-center hover:bg-gray-400 h-14 cursor-pointer">
-                PROJELERIMIZ
-              </li>
-            </Link>
-            <Link to="/hizmetlerimiz">
-              <li className=" hover:text-white hover:cursor-pointer grid place-items-center hover:bg-gray-400 h-14 cursor-pointer">
-                <p className="text-xs ">HIZMETLERIMIZ</p>
-              </li>{" "}
-            </Link>
-            <Link to="kurumsal">
-              <li className=" hover:text-white hover:cursor-pointer grid place-items-center hover:bg-gray-400 h-14 cursor-pointer">
-                <p className="text-xs ">KURUMSAL</p>
-              </li>{" "}
-            </Link>
-            <Link to="/iletisim">
-              <li className="hover:text-white hover:cursor-pointer grid place-items-center hover:bg-gray-400 h-14 cursor-pointer">
-                <p className="text-xs ">ILETISIM</p>
-              </li>
-            </Link>
-          </ul>
-        </div>
+        <ul className="flex font-dosis font-medium text-xs menu-item mb-3 px-1 nav mr-3 items-ce text-gray-500 shrink-1">
+          <Link to="/">
+            <li className="hover:text-white px-2 font-medium hover:cursor-pointer py-3  hover:bg-gray-400 h-10 cursor-pointer">
+              ANA SAYFA
+            </li>
+          </Link>
+          <Link to="/projelerimiz">
+            <li className="hover:text-white px-2 font-medium hover:cursor-pointer py-3 hover:bg-gray-400 h-10 cursor-pointer">
+              PROJELERIMIZ
+            </li>
+          </Link>
+          <Link to="/hizmetlerimiz">
+            <li className=" hover:text-white px-2 hover:cursor-pointer grid place-items-center hover:bg-gray-400 py-3 h-10 cursor-pointer">
+              <p className="text-xs ">HIZMETLERIMIZ</p>
+            </li>{" "}
+          </Link>
+          <Link to="kurumsal">
+            <li className=" hover:text-white px-2 hover:cursor-pointer grid place-items-center hover:bg-gray-400 h-10 py-3 cursor-pointer">
+              <p className="text-xs ">KURUMSAL</p>
+            </li>{" "}
+          </Link>
+          <Link to="/iletisim">
+            <li className="hover:text-white px-2 hover:cursor-pointer grid place-items-center hover:bg-gray-400 h-10 py-3 cursor-pointer">
+              <p className="text-xs ">ILETISIM</p>
+            </li>
+          </Link>
+        </ul>
+
         <div className="toggle justify-end hidden" ref={container}>
           <button type="button" class="button" onClick={handleButtonClick}>
             ☰

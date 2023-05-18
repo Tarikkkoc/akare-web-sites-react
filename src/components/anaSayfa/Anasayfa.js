@@ -4,16 +4,20 @@ import Hakkimizda from "./Hakkimizda";
 
 const Anasayfa = ({ sirketler }) => {
   return (
-    <div>
-      <div className="bg-slate-200 flex border-b-2 border-slate-300 photoDiv">
-        <div className="w-1/2 grid place-items-center ">
+    <div className="mt-0.5">
+      <div className="bg-slate-200 menu-background bg-cover flex border-b-2 border-slate-300 photoDiv">
+        <div className="flex items-center justify-end ">
           <img
             src="https://akarebilisim.com.tr/images/cloud-servers.gif"
-            className="pt-10 "
+            className="min-h-[50px] h-[80%] "
           ></img>
         </div>
-        <div className="w-1/2 pr-32 grid place-items-center ">
-          <img src="https://akarebilisim.com.tr/images/projeler.gif" alt="" />
+        <div className="pr-32 flex items-center justify-center">
+          <img
+            className="min-h-[50px]"
+            src="https://akarebilisim.com.tr/images/projeler.gif"
+            alt=""
+          />
         </div>
       </div>
       <Sirketler sirketler={sirketler} />

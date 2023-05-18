@@ -3,13 +3,21 @@ import { Link } from "react-router-dom";
 
 const Sirketler = ({ sirketler }) => {
   return (
-    <div className="flex sirketler justify-around pl-32 pr-32 pt-10">
+    <div className="flex sirketler justify-around px-32 mt-3">
       {sirketler.map((sirket) => (
-        <div className="w-32">
+        <div className="w-32 flex justify-around">
           <Link to={`/${sirket.link}`}>
-            <img className="w-24" src={sirket.img} alt="" />
-            <span className="pl-2 text-orange-500">{sirket.name}</span>
-            <span className="text-blue-500">{sirket.statu}</span>
+            <div className="flex flex-col gap-2 items-center justify-center">
+              <img
+                className="w-20 min-w-[80px] min-h-[96]"
+                src={sirket.img}
+                alt=""
+              />
+              <div className="flex">
+                <span className="text-orange-500 text-2xl">{sirket.name}</span>
+                <span className="text-blue-500 text-2xl">{sirket.statu}</span>
+              </div>
+            </div>
           </Link>
         </div>
       ))}
