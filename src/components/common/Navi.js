@@ -33,7 +33,7 @@ const Navi = () => {
             />
           </Link>
         </div>
-        <ul className="flex font-dosis font-medium text-xs menu-item mb-3 px-1 nav mr-3 items-ce text-gray-500 shrink-1">
+        <ul className="flex font-dosis font-medium text-sm menu-item mb-3 px-1 nav mr-3 items-center text-gray-500 shrink-1">
           <Link to="/">
             <li className="hover:text-white px-2 font-medium hover:cursor-pointer py-3  hover:bg-gray-400 h-10 cursor-pointer">
               ANA SAYFA
@@ -46,17 +46,17 @@ const Navi = () => {
           </Link>
           <Link to="/hizmetlerimiz">
             <li className=" hover:text-white px-2 hover:cursor-pointer grid place-items-center hover:bg-gray-400 py-3 h-10 cursor-pointer">
-              <p className="text-xs ">HIZMETLERIMIZ</p>
+              HIZMETLERIMIZ
             </li>{" "}
           </Link>
           <Link to="kurumsal">
             <li className=" hover:text-white px-2 hover:cursor-pointer grid place-items-center hover:bg-gray-400 h-10 py-3 cursor-pointer">
-              <p className="text-xs ">KURUMSAL</p>
+              KURUMSAL
             </li>{" "}
           </Link>
           <Link to="/iletisim">
             <li className="hover:text-white px-2 hover:cursor-pointer grid place-items-center hover:bg-gray-400 h-10 py-3 cursor-pointer">
-              <p className="text-xs ">ILETISIM</p>
+              ILETISIM
             </li>
           </Link>
         </ul>

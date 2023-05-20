@@ -2,7 +2,7 @@ import React from "react";
 
 const Body = () => {
   return (
-    <div className="flex pt-10 pb-10 pr-20 pl-20 hakkimizda">
+    <div className="flex gap-4 pt-10 pb-10 px-20 hakkimizda">
       <div
         className="text font-normal text-gray-500 flex flex-col gap-2"
         id="address w-1/2"
@@ -36,11 +36,11 @@ const Body = () => {
           <p> info@akareisg.com</p>{" "}
         </div>
       </div>
-      <div className="p-5 w-1/2 flex flex-col hakkimizda2">
+      <div className="px-5 w-1/2 flex items-center flex-col hakkimizda2">
         <form>
           <div className="flex gap-2">
             <input
-              className="p-2 w-1/2 border border-solid border-gray-300 rounded-md text"
+              className="px-2 w-1/2 border border-solid border-gray-300 rounded-md text"
               type="text"
               id="name"
               name="name"
