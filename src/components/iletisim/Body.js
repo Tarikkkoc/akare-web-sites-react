@@ -2,7 +2,7 @@ import React from "react";
 
 const Body = () => {
   return (
-    <div className="flex gap-4 pt-10 pb-10 px-20 hakkimizda">
+    <div className="flex justify-center gap-6 pt-10 pb-10 px-20 hakkimizda">
       <div
         className="text font-normal text-gray-500 flex flex-col gap-2"
         id="address w-1/2"

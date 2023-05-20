@@ -17,7 +17,7 @@ const Footer = ({ sirketler }) => {
           />
         </div>
       </div>
-      <div className="flex justify-around gap-5 px-24 mt-5 footer">
+      <div className="flex justify-around gap-5 px-28 pb-8 mt-5 footer">
         <div
           className=" gap-2 text flex flex-col justify-center w-4/12 text-gray-500"
           id="adres"

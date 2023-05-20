@@ -23,11 +23,11 @@ const Navi = () => {
   }, []);
   return (
     <div className="shadow-lg bg-slate-100 border-t-2 border-red-500 sticky top-0">
-      <div className="flex justify-between px-8 items-center container mx-auto">
-        <div className="flex-none  ">
+      <div className="flex justify-between p items-center container mx-auto">
+        <div className="flex justify-center w-[40%] ">
           <Link to="/">
             <img
-              className="align-middle min-h-[50px] h-6  "
+              className="align-middle min-h-[50px] h-8  "
               src="https://akarebilisim.com.tr/images/logoNew3.png"
               alt=""
             />
