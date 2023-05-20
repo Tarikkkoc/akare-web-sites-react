@@ -7,7 +7,7 @@ const Footer = ({ sirketler }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <div className="bg-zinc-800 pt-12 pb-5">
+    <div className="bg-neutral-800 pt-12 pb-5">
       <div className="w-full flex justify-center pt-2">
         <div onClick={handleScrollTop}>
           <img
@@ -53,7 +53,7 @@ const Footer = ({ sirketler }) => {
           ))}
         </div>
         <div
-          className="w-[30%] grid place-items-end text pb-5 text-gray-500"
+          className="w-[30%] grid flex items-end justify-center text pb-5  text-gray-500"
           id="info"
         >
           <p>2017 © aKare Bilişim Hizmetleri</p>
