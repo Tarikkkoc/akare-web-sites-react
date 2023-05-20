@@ -33,7 +33,7 @@ const Navi = () => {
             />
           </Link>
         </div>
-        <ul className="flex font-dosis font-medium text-sm menu-item mb-3 px-1 nav mr-3 justify-center items-center text-gray-500 shrink-1">
+        <ul className="flex font-dosis font-medium text-sm menu-item mb-3 px-1 nav mr-3  text-gray-500 shrink-1">
           <Link to="/">
             <li className="hover:text-white px-2 font-medium hover:cursor-pointer py-3  hover:bg-gray-400 h-10 cursor-pointer">
               ANA SAYFA
