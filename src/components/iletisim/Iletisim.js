@@ -1,7 +1,6 @@
 import React from "react";
 import Body from "./Body";
 import PhotoDiv from "../common/PhotoDiv";
-import GoogleMaps from "./GoogleMaps";
 
 const Iletisim = () => {
   return (
@@ -12,7 +11,6 @@ const Iletisim = () => {
         "
       />
       <Body />
-      <GoogleMaps />
     </div>
   );
 };
