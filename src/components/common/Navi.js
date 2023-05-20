@@ -23,7 +23,7 @@ const Navi = () => {
   }, []);
   return (
     <div className="shadow-lg bg-slate-100 border-t-2 border-red-500 sticky top-0">
-      <div className="flex justify-between p items-center container mx-auto">
+      <div className="flex header-nav p items-center container mx-auto">
         <div className="flex justify-center w-[40%] ">
           <Link to="/">
             <img
@@ -33,7 +33,7 @@ const Navi = () => {
             />
           </Link>
         </div>
-        <ul className="flex font-dosis font-medium text-sm menu-item mb-3 px-1 nav mr-3  text-gray-500 shrink-1">
+        <ul className="flex font-dosis font-medium text-sm menu-item mb-3 px-1 nav mr-3 justify-start text-gray-500 shrink-1">
           <Link to="/">
             <li className="hover:text-white px-2 font-medium hover:cursor-pointer py-3  hover:bg-gray-400 h-10 cursor-pointer">
               ANA SAYFA
