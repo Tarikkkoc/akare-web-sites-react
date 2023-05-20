@@ -22,7 +22,7 @@ const Navi = () => {
     };
   }, []);
   return (
-    <div className="shadow-lg bg-slate-100 border-t-2 border-red-500">
+    <div className="shadow-lg bg-slate-100 border-t-2 border-red-500 sticky top-0">
       <div className="flex justify-between px-8 items-center container mx-auto">
         <div className="flex-none  ">
           <Link to="/">

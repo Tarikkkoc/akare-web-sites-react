@@ -7,7 +7,7 @@ const Body = () => {
         id="yazilimHizmeti"
         className="text font-normal text-gray-500 flex gap-2 hakkimizda2"
       >
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 w-[75%]">
           <h2 className="text-3xl font-normal text-orange-500">
             Yazılım Hizmeti
           </h2>
@@ -35,7 +35,7 @@ const Body = () => {
             <li>Robotik Uygulalamalar</li>
           </ul>
         </div>
-        <div className="">
+        <div className="w-[25%]">
           <img
             src="https://akarebilisim.com.tr/images/multi_platform.png"
             alt=""
@@ -46,13 +46,13 @@ const Body = () => {
         id="bilgiGuvenligi"
         className="text font-normal text-gray-500 flex gap-2 hakkimizda2"
       >
-        <div>
+        <div className="w-[25%]">
           <img
             src="https://akarebilisim.com.tr/images/custom_solutions.png"
             alt=""
           />
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 w-[75%]">
           <h2 className="text-3xl font-normal text-orange-500">
             Bilgi Güvenliği
           </h2>
@@ -82,7 +82,7 @@ const Body = () => {
         id="networkYapilandirma"
         className="text font-normal text-gray-500 flex gap-2 hakkimizda2"
       >
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 w-[75%]">
           <h2 className="text-3xl font-normal text-orange-500">
             Network Yapılandırma
           </h2>
@@ -108,7 +108,7 @@ const Body = () => {
             <li>Kurum İçi ve Dışı Güvenlik Kurgusu</li>
           </ul>
         </div>
-        <div>
+        <div className="w-[25%]">
           <img
             src="https://akarebilisim.com.tr/images/third_party_integration.png"
             alt=""
@@ -119,13 +119,13 @@ const Body = () => {
         id="danismanlik"
         className="text font-normal text-gray-500 flex gap-2 hakkimizda2"
       >
-        <div>
+        <div className="w-[25%]">
           <img
             src="https://akarebilisim.com.tr/images/multi_language.png"
             alt=""
           />
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 w-[75%]">
           <h2 className="text-3xl font-normal text-orange-500">Danışmanlık</h2>
           <p>
             Kurumlarda bilgi güvenliğinin sağlanması ve denetlenmesi, günümüz

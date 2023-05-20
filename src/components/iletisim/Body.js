@@ -36,9 +36,9 @@ const Body = () => {
           <p> info@akareisg.com</p>{" "}
         </div>
       </div>
-      <div className="px-5 w-1/2 flex items-center flex-col hakkimizda2">
+      <div className="px-5 w-1/2 flex items-centr flex-col hakkimizda2">
         <form>
-          <div className="flex gap-2">
+          <div className="flex w-full gap-2">
             <input
               className="px-2 w-1/2 border border-solid border-gray-300 rounded-md text"
               type="text"
@@ -56,7 +56,7 @@ const Body = () => {
               required
             />
           </div>
-          <div className="pt-5">
+          <div className="pt-5 w-full">
             <textarea
               className="p-2 w-full border border-solid border-gray-300 rounded-md text"
               id="message"

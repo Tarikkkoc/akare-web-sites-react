@@ -19,7 +19,7 @@ const Footer = ({ sirketler }) => {
       </div>
       <div className="flex justify-around gap-5 px-24 mt-5 footer">
         <div
-          className=" gap-2 text-base flex flex-col justify-center w-4/12 text-gray-600"
+          className=" gap-2 text flex flex-col justify-center w-4/12 text-gray-500"
           id="adres"
         >
           <p className="w-full">
@@ -27,7 +27,7 @@ const Footer = ({ sirketler }) => {
             İstanbul
           </p>
           <p>(212) 210 63 13</p>
-          <div className="flex pt-2.5">
+          <div className="flex gap-2 pt-2.5">
             <a href="https://www.youtube.com/channel/UCzTvHr5-gYWVWn_WHSRgaIg">
               <img
                 src="https://akarebilisim.com.tr/images/youtube.jpg"
@@ -53,7 +53,7 @@ const Footer = ({ sirketler }) => {
           ))}
         </div>
         <div
-          className="w-4/12 grid place-items-end pb-5 text-gray-600"
+          className="w-4/12 grid place-items-end text pb-5 text-gray-500"
           id="info"
         >
           <p>2017 © aKare Bilişim Hizmetleri</p>
