@@ -14,8 +14,8 @@ const Sirketler = ({ sirketler }) => {
                 alt=""
               />
               <div className="flex">
-                <span className="text-orange-500 text-2xl">{sirket.name}</span>
-                <span className="text-blue-500 text-2xl">{sirket.statu}</span>
+                <span className="text-orange-500 text-3xl">{sirket.name}</span>
+                <span className="text-blue-500 text-3xl">{sirket.statu}</span>
               </div>
             </div>
           </Link>

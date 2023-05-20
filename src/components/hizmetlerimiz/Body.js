@@ -5,10 +5,10 @@ const Body = () => {
     <div className="flex flex-col gap-5 pr-32 pl-32 pt-10 pb-10 hakkimizda">
       <div
         id="yazilimHizmeti"
-        className="text-base font-normal text-gray-600 flex gap-2 hakkimizda2"
+        className="text font-normal text-gray-500 flex gap-2 hakkimizda2"
       >
         <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-normal text-orange-500">
+          <h2 className="text-3xl font-normal text-orange-500">
             Yazılım Hizmeti
           </h2>
           <p>
@@ -44,7 +44,7 @@ const Body = () => {
       </div>
       <div
         id="bilgiGuvenligi"
-        className="text-base font-normal text-gray-600 flex gap-8 hakkimizda2"
+        className="text font-normal text-gray-500 flex gap-2 hakkimizda2"
       >
         <div>
           <img
@@ -53,7 +53,7 @@ const Body = () => {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-normal text-orange-500">
+          <h2 className="text-3xl font-normal text-orange-500">
             Bilgi Güvenliği
           </h2>
           <p>
@@ -80,10 +80,10 @@ const Body = () => {
       </div>
       <div
         id="networkYapilandirma"
-        className="text-base font-normal text-gray-600 flex gap-2 hakkimizda2"
+        className="text font-normal text-gray-500 flex gap-2 hakkimizda2"
       >
         <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-normal text-orange-500">
+          <h2 className="text-3xl font-normal text-orange-500">
             Network Yapılandırma
           </h2>
           <p>
@@ -117,7 +117,7 @@ const Body = () => {
       </div>
       <div
         id="danismanlik"
-        className="text-base font-normal text-gray-600 flex gap-10 hakkimizda2"
+        className="text font-normal text-gray-500 flex gap-2 hakkimizda2"
       >
         <div>
           <img
@@ -126,7 +126,7 @@ const Body = () => {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-normal text-orange-500">Danışmanlık</h2>
+          <h2 className="text-3xl font-normal text-orange-500">Danışmanlık</h2>
           <p>
             Kurumlarda bilgi güvenliğinin sağlanması ve denetlenmesi, günümüz
             koşullarında çok önemli bir gerekliliktir.

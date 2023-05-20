@@ -22,20 +22,20 @@ const Anasayfa = ({ sirketler }) => {
           .split("")
           .map((char, index) => <span key={index}>{char}</span>),
       ]);
-    }, 2000);
+    });
 
     return () => clearInterval(animationInterval);
   }, []);
   return (
     <div className="mt-0.5">
       <div className="bg-slate-200 menu-background bg-cover flex border-b-2 border-slate-300 photoDiv">
-        <div className="flex w-1/2 items-center justify-end ">
+        <div className="flex w-1/2 h-1/2 photoDivImg items-center justify-end">
           <img
             src="https://akarebilisim.com.tr/images/cloud-servers.gif"
-            className="min-h-[50px] h-[80%] "
+            className="min-h-[95px] h-[55%] "
           ></img>
         </div>
-        <div className="pr-32 w-1/2 flex items-center justify-center">
+        <div className="pr- w-1/2  flex items-center justify-center">
           <div className="matrix-container">
             {matrixRows.map((row, index) => (
               <div key={index} className="matrix-row">

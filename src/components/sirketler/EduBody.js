@@ -3,16 +3,16 @@ import React from "react";
 const EduBody = () => {
   return (
     <div className="flex pr-20 pt-10 pb-10 pl-20 gap-2 hakkimizda">
-      <div className="w-1/2 flex flex-col text-sm font-light text-gray-600 gap-2">
-        <h3 className="text-2xl font-normal text-orange-500">
-          <span className="text-orange-500 text-2xl">AKARE</span>
-          <span className="text-blue-500 text-2xl">EDU</span>
+      <div className="w-1/2 flex flex-col text font-light text-gray-500 gap-2">
+        <h3 className="text-4xl font-normal text-orange-500">
+          <span className="text-orange-500 text-4xl">AKARE</span>
+          <span className="text-blue-500 text-4xl">EDU</span>
         </h3>
         <p>
           İş Sağlığı ve Güvenliği kapsamındaki İSG uzman eğitimi veren
           dershanelerin online eğitim düzenleme ve takip yazılımıdır.
         </p>
-        <h3 className="text-2xl font-light text-orange-500">Online Eğitim</h3>
+        <h3 className="text-3xl font-light text-orange-500">Online Eğitim</h3>
         <ul className="list-disc pl-5">
           <li>Görüntülü online eğitim verebilme</li>
           <li>Derseten önce ve sonra test</li>

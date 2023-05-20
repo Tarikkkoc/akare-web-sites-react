@@ -4,7 +4,7 @@ const Body = () => {
   return (
     <div className="flex pt-10 pb-10 pr-20 pl-20 hakkimizda">
       <div
-        className="text-base font-normal text-gray-600 flex flex-col gap-2"
+        className="text font-normal text-gray-500 flex flex-col gap-2"
         id="address w-1/2"
       >
         <p>İstanbul Üniversitesi Avcılar Kampüsü, TEKNOKENT Z-15</p>
@@ -40,7 +40,7 @@ const Body = () => {
         <form>
           <div className="flex gap-2">
             <input
-              className="p-2 w-1/2 border border-solid border-gray-300 rounded-md text-base"
+              className="p-2 w-1/2 border border-solid border-gray-300 rounded-md text"
               type="text"
               id="name"
               name="name"
@@ -48,7 +48,7 @@ const Body = () => {
               required
             />{" "}
             <input
-              className="p-2 w-1/2 border border-solid border-gray-300 rounded-md text-base"
+              className="p-2 w-1/2 border border-solid border-gray-300 rounded-md text"
               type="email"
               id="email"
               name="email"
@@ -58,7 +58,7 @@ const Body = () => {
           </div>
           <div className="pt-5">
             <textarea
-              className="p-2 w-full border border-solid border-gray-300 rounded-md text-base"
+              className="p-2 w-full border border-solid border-gray-300 rounded-md text"
               id="message"
               name="message"
               placeholder="Mesajınız"
@@ -68,7 +68,7 @@ const Body = () => {
           </div>
           <div className="">
             <button
-              className="bg-sky-200 float-right hover:bg-sky-400 border-none py-2 px-4 rounded-md text-base cursor-pointer"
+              className="bg-sky-200 float-right hover:bg-sky-400 border-none py-2 px-4 rounded-md text cursor-pointer"
               type="submit"
             >
               Gönder

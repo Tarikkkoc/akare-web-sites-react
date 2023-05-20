@@ -19,11 +19,11 @@ const Hakkimizda = ({
             />
           </div>
           <div>
-            <h3 className="text-orange-500 text-2xl font-normal mt-5 mb-2.5">
+            <h2 className="text-orange-500 text-3xl font-normal mt-5 mb-2.5">
               {onceGuvenlikTitle}
-            </h3>
+            </h2>
           </div>
-          <div className="text-sm leading-6 flex flex-col gap-2 text-gray-500">
+          <div className="text leading-6 text-gray-500 flex flex-col gap-2">
             <p className="">
               Günümüzde bilgi toplumu olarak bize düşen bilgiyi korumak ve
               güvenli bir şekilde erişilmesini sağlamaktır.
@@ -47,7 +47,7 @@ const Hakkimizda = ({
             </Link>
           </div>
         </div>
-        <div id="akilliCozumler" className="border-2 safety w-1/2 p-5">
+        <div id="akilliCozumler" className="border-2 safety lg:w-1/2 p-5">
           <div className="flex justify-end">
             <img
               className="min-h-[100px] h-[100px]"
@@ -56,11 +56,11 @@ const Hakkimizda = ({
             />
           </div>
           <div>
-            <h3 className="text-right text-orange-500 text-2xl font-normal mt-5 mb-2.5">
+            <h2 className="text-right text-orange-500 text-3xl font-normal mt-5 mb-2.5">
               {akilliCozumlerTitle}
-            </h3>
+            </h2>
           </div>
-          <div className="flex flex-col leading-6 gap-2 text-sm text-gray-500">
+          <div className="flex flex-col leading-6 gap-2 text text-gray-500">
             <p className="text-right">
               Teknolojinin artık her yerde olduğu bu dönemde, veriye gerek mobil
               platformlardan gerek masaüstü uygulamalardan hızlıca erişmek artık

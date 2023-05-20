@@ -3,11 +3,11 @@ import React from "react";
 const IsgBody = () => {
   return (
     <div className="flex pr-20 pt-10 pb-10 pl-20 gap-2 hakkimizda">
-      <div className="w-1/2 flex flex-col text-sm font-light text-gray-600 gap-2">
+      <div className="w-1/2 flex flex-col text font-light text-gray-500 gap-2">
         <div>
           <h3>
-            <span className="text-2xl font-normal text-orange-500">AKARE</span>
-            <span className="text-2xl font-normal text-blue-500">ISG</span>
+            <span className="text-4xl font-normal text-orange-500">AKARE</span>
+            <span className="text-4xl font-normal text-blue-500">ISG</span>
           </h3>
           <p>
             aKareISG İş Sağlığı ve Güvenliği yazılımı; ister bir OSGB firması
@@ -26,7 +26,7 @@ const IsgBody = () => {
         </div>
         <div className="flex gap-20 pr-2 pl-2">
           <div id="riskAnalizi">
-            <h3 className="text-2xl font-normal text-orange-500">
+            <h3 className="text-3xl font-normal text-orange-500">
               Risk Analizi
             </h3>
             <ul className="list-disc pl-10 pt-2.5">
@@ -38,7 +38,7 @@ const IsgBody = () => {
             </ul>
           </div>
           <div id="egitim">
-            <h3 className="text-2xl font-normal text-orange-500">Eğitim</h3>
+            <h3 className="text-3xl font-normal text-orange-500">Eğitim</h3>
             <ul className="list-disc pl-10 pt-2.5">
               <li>Konulara Göre Eğitim</li>
               <li>Sertifika Basma</li>
@@ -50,7 +50,7 @@ const IsgBody = () => {
         </div>
         <div className="flex gap-12 pr- pl-">
           <div id="isgFormlari">
-            <h3 className="text-2xl font-normal text-orange-500">
+            <h3 className="text-3xl font-normal text-orange-500">
               İSG Formları
             </h3>
             <ul className="list-disc pl-10 pt-2.5">
@@ -62,7 +62,7 @@ const IsgBody = () => {
             </ul>
           </div>
           <div id="isyeriHekimi">
-            <h3 className="text-2xl font-normal text-orange-500">
+            <h3 className="text-3xl font-normal text-orange-500">
               İşyeri Hekimi Otomasyonu
             </h3>
             <ul className="list-disc pl-10 pt-2.5">
@@ -77,7 +77,7 @@ const IsgBody = () => {
         </div>
         <div className="flex gap-12 pr-2 pl-2">
           <div id="yapilanmalar">
-            <h3 className="text-2xl font-normal text-orange-500">
+            <h3 className="text-3xl font-normal text-orange-500">
               Yapılanmalar
             </h3>
             <ul className="list-disc pl-10 pt-2.5">
@@ -90,7 +90,7 @@ const IsgBody = () => {
             </ul>
           </div>
           <div id="uygulamalar">
-            <h3 className="text-2xl font-normal text-orange-500">
+            <h3 className="text-3xl font-normal text-orange-500">
               Uygulamalar
             </h3>
             <ul className="list-disc pl-10 pt-2.5">

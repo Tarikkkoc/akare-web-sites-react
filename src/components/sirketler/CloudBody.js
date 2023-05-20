@@ -3,10 +3,10 @@ import React from "react";
 const CloudBody = () => {
   return (
     <div className="flex pr-20 pt-10 pb-10 pl-20 gap-2 hakkimizda">
-      <div className="w-1/2 flex flex-col text-sm font-light text-gray-600 gap-2 hakkimizda2">
-        <h2 className="text-2xl font-normal text-orange-500">
-          <span className="text-orange-500 text-2xl">AKARE</span>
-          <span className="text-blue-500 text-2xl">CLOUD</span>
+      <div className="w-1/2 flex flex-col text font-light text-gray-500 gap-2 hakkimizda2">
+        <h2 className="text-4xl font-normal text-orange-500">
+          <span className="text-orange-500">AKARE</span>
+          <span className="text-blue-500">CLOUD</span>
         </h2>
         <p>
           2000 yılından beri kendi sunucuları ile Türkiye'de hizmet veren
@@ -37,7 +37,7 @@ const CloudBody = () => {
           istedikleri anda erişebilir ve diledikleri güncellemeleri
           yapabilirler.
         </p>
-        <h3 className="text-2xl font-normal text-orange-500">Süreklilik</h3>
+        <h3 className="text-3xl font-normal text-orange-500">Süreklilik</h3>
         <p>
           aKare yıl içinde min. %99.9 süreklilik ile çalışmaktadır. Hatlarda
           olan aksaklıktan en az düzeyde etkilenilmekte, kullanılan BGP4
@@ -46,27 +46,27 @@ const CloudBody = () => {
           omurgasına yönlendirilebilmektedir. A Bilgisayar Datacenter , UPS ve
           jeneratör desteği ile sunucularımıza kesintisiz enerji sağlamaktadır.
         </p>
-        <h3 className="text-2xl font-normal text-orange-500">Hız</h3>
+        <h3 className="text-3xl font-normal text-orange-500">Hız</h3>
         <p>
           aKare, TTNet omurgasına yüksek hızlarla bağlanmaktadır. Hat yoğunluğu
           sürekli denetlenmekte ve ortalama trafiğin %80 doluluğa ulaşması
           durumunda hat kapasitesi artırılmaktadır.
         </p>
-        <h3 className="text-2xl font-normal text-orange-500">
+        <h3 className="text-3xl font-normal text-orange-500">
           Müşteri Desteği
         </h3>
         <p>
           aKare, müşterilerine 365 gün 24 saat telefonla destek hizmeti
           sunmaktadır.
         </p>
-        <h3 className="text-2xl font-normal text-orange-500">Sunucu Odası</h3>
+        <h3 className="text-3xl font-normal text-orange-500">Sunucu Odası</h3>
         <p>
           aKare tarafında barındırılan sunucularının en yüksek performansta
           kesintisiz çalışmalarını sağlamak amacı ile bu cihazlar, UPS ve
           jeneratör ile desteklenen; nem, ısı ve yangın kontrollü odalarda
           korunmaktadır.
         </p>
-        <h3 className="text-2xl font-normal text-orange-500">Güvenlik</h3>
+        <h3 className="text-3xl font-normal text-orange-500">Güvenlik</h3>
         <p>
           Sunucular firewall güvenlik sisteminden sonra hatta bağlanmaktadır.
           İstenirse ek prtokollerle daha yüksek güvenlikli sistemi sağlanır.

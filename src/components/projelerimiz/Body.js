@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 const Body = () => {
   return (
     <div className="pr-20 pl-20 pt-5 pb-10 flex flex-col hakkimizda">
-      <div id="aKareISG" className="flex justify-between hakkimizda2">
+      <div id="aKareISG" className="flex gap-3 justify-between hakkimizda2">
         <div className="pt-5">
           <img
-            className="h-40"
+            className="h-52"
             src="https://akarebilisim.com.tr/images/1.png"
             alt=""
           />
         </div>
-        <div className="w-10/12 pl-5 pt-2.5 text-base font-normal text-gray-600 flex flex-col gap-2">
+        <div className="w-9/12 pl pt-2.5 text font-normal text-gray-500 flex flex-col gap-2">
           <h2>
-            <span className="text-orange-500 text-2xl">aKare</span>
-            <span className="text-blue-500 text-2xl">ISG</span>
+            <span className="text-orange-500 text-3xl">aKare</span>
+            <span className="text-blue-500 text-3xl">ISG</span>
           </h2>
           <p>
             aKareISG İş Sağlığı ve Güvenliği yazılımı; ister bir OSGB firması
@@ -38,11 +38,11 @@ const Body = () => {
           </Link>
         </div>
       </div>
-      <div id="aKareTASK" className="flex justify-between">
-        <div className="w-9/12 pr-5 pt-2.5 text-base font-normal text-gray-600 flex flex-col gap-2">
+      <div id="aKareTASK" className="flex gap-2 justify-between">
+        <div className="w-9/12 pr-5 pt-2.5 text font-normal text-gray-500 flex flex-col gap-2">
           <h2>
-            <span className="text-orange-500 text-2xl">aKare</span>
-            <span className="text-blue-500 text-2xl">TASK</span>
+            <span className="text-orange-500 text-3xl">aKare</span>
+            <span className="text-blue-500 text-3xl">TASK</span>
           </h2>
           <p>
             OSGB firmalarının ya da Bireysel İSG uzman veya işyeri hekimlerinin,
@@ -59,26 +59,26 @@ const Body = () => {
             </span>
           </Link>
         </div>
-        <div className="pt-5  pl-10">
+        <div className="pt-5 pl-10">
           <img
-            className=" h-40"
+            className=" h-52"
             src="https://akarebilisim.com.tr/images/1.png"
             alt=""
           />
         </div>
       </div>
-      <div id="aKareEDU" className="flex ">
+      <div id="aKareEDU" className="flex gap-3 justify-between hakkimizda2 ">
         <div className="pt-5 ">
           <img
-            className="h-40"
+            className="h-52"
             src="https://akarebilisim.com.tr/images/1.png"
             alt=""
           />
         </div>
-        <div className="w-9/12 pl-5 pt-2.5 text-base font-normal text-gray-600 flex flex-col gap-2">
+        <div className="w-9/12 pl pt-2.5 text font-normal text-gray-600 flex flex-col gap-2">
           <h2>
-            <span className="text-orange-500 text-2xl">aKare</span>
-            <span className="text-blue-500 text-2xl">EDU</span>
+            <span className="text-orange-500 text-3xl">aKare</span>
+            <span className="text-blue-500 text-3xl">EDU</span>
           </h2>
           <p>
             İş Sağlığı ve Güvenliği kapsamındaki İSG uzman eğitimi veren

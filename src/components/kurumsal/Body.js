@@ -12,7 +12,7 @@ const Body = () => {
     switch (selected) {
       case "hakkimizda":
         return (
-          <div className="text-sm font-dosis font-light text-gray-600 pt-5 gap-2  pb-10">
+          <div className="text font-dosis font-light text-gray-500 pt-5 gap-2 pb-10">
             <p>
               1989 yılından beri sektörde olan firmamız, yıllar içinde yazılımın
               bir çok dalında başarılı uygulamalar yaparak, her zaman en iyiyi
@@ -56,7 +56,7 @@ const Body = () => {
               2012 yılından beri İstanbul Üniversitei TEKNOKENT 'te
               falliyetlerimize devam etmekteyiz.
             </p>
-            <h2 className="text-xl pt-2.5 font-light">Faaliyetlerimiz</h2>
+            <h2 className="text-2xl pt-2.5 font-light">Faaliyetlerimiz</h2>
             <ul className="pl-10 pt-2.5 list-disc">
               <li>
                 1992 de McDonalds tüm İstanbul şubeleri ürün kontrol ve takip
@@ -85,7 +85,7 @@ const Body = () => {
         );
       case "vizyon":
         return (
-          <div className="text-sm font-light text-gray-600 gap-2 pt-5  pb-10">
+          <div className="text font-light text-gray-500 gap-2 pt-5 pb-10">
             <p>Liderlik, Sorumluluk ve Vizyon İster</p>
             <ul className="pl-10 pt-2.5 list-disc">
               <li>Öncü,</li>
@@ -102,7 +102,7 @@ const Body = () => {
         );
       case "politika":
         return (
-          <div className="text-sm font-light flex flex-col gap-2 text-gray-600 gap-2 pt-5  pb-10">
+          <div className="text font-light flex flex-col gap-2 text-gray-500 gap-2 pt-5 pb-10">
             <p>
               aKare olarak, Varlıklarımızın gizlilik, bütünlük ve
               erişilebilirlik özelliklerinin korunmasını ve risklerin kabul
@@ -132,7 +132,7 @@ const Body = () => {
         );
       case "arge":
         return (
-          <div className="text-sm font-light text-gray-600 pt-5  pb-10">
+          <div className="text font-light text-gray-500 pt-5  pb-10">
             <p>
               İstanbul Üniversitesi TEKNOKENT te faaliyetlerini yürüten
               firmamız, kurulduğu ilk günden beri AR-GE ye öncelik vermiş ve bu
@@ -152,7 +152,7 @@ const Body = () => {
         );
       case "kurumsal":
         return (
-          <div className="text-sm font-light text-gray-600 pt-5 flex flex-col gap-2 pb-10">
+          <div className="text font-light text-gray-500 pt-5 flex flex-col gap-2 pb-10">
             <div className="flex">
               <div className="col-sm-2 w-1/6">Ünvan</div>
               <div className="col-sm-10">
@@ -189,8 +189,8 @@ const Body = () => {
           id={selected === "hakkimizda" ? "selected" : ""}
           className={` cursor-pointer ${
             selected === "hakkimizda"
-              ? "rounded-lg p-2 bg-blue-300 text-white text-base border-blue-200"
-              : "bg-blue-400 text-gray-700 rounded-lg p-2 hover:bg-blue-100"
+              ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
+              : "bg-blue-400 text-gray-700 rounded-lg text p-2 hover:bg-blue-100"
           }`}
           onClick={() => handleClick("hakkimizda")}
         >
@@ -200,8 +200,8 @@ const Body = () => {
           id={selected === "vizyon" ? "selected" : ""}
           className={` cursor-pointer ${
             selected === "vizyon"
-              ? "rounded-lg p-2 bg-blue-300 text-white text-base border-blue-200"
-              : "bg-blue-400 text-gray-700 rounded-lg p-2 hover:bg-blue-100"
+              ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
+              : "bg-blue-400 text-gray-700 text rounded-lg p-2 hover:bg-blue-100"
           }`}
           onClick={() => handleClick("vizyon")}
         >
@@ -211,8 +211,8 @@ const Body = () => {
           id={selected === "politika" ? "selected" : ""}
           className={` cursor-pointer ${
             selected === "politika"
-              ? "rounded-lg p-2 bg-blue-300 text-white text-base border-blue-200"
-              : "bg-blue-400 text-gray-700 rounded-lg p-2 hover:bg-blue-100"
+              ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
+              : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
           }`}
           onClick={() => handleClick("politika")}
         >
@@ -222,8 +222,8 @@ const Body = () => {
           id={selected === "arge" ? "selected" : ""}
           className={` cursor-pointer ${
             selected === "arge"
-              ? "rounded-lg p-2 bg-blue-300 text-white text-base border-blue-200"
-              : "bg-blue-400 text-gray-700 rounded-lg p-2 hover:bg-blue-100"
+              ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
+              : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
           }`}
           onClick={() => handleClick("arge")}
         >
@@ -233,8 +233,8 @@ const Body = () => {
           id={selected === "kurumsal" ? "selected" : ""}
           className={` cursor-pointer ${
             selected === "kurumsal"
-              ? "rounded-lg p-2 bg-blue-300 text-white text-base border-blue-200"
-              : "bg-blue-400 text-gray-700 rounded-lg p-2 hover:bg-blue-100"
+              ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
+              : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
           }`}
           onClick={() => handleClick("kurumsal")}
         >
