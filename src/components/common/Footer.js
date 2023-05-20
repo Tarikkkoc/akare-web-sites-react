@@ -19,7 +19,7 @@ const Footer = ({ sirketler }) => {
       </div>
       <div className="flex justify-around gap-5 px-28 pb-8 mt-5 footer">
         <div
-          className=" gap-2 text flex flex-col justify-center w-4/12 text-gray-500"
+          className=" gap-2 text flex flex-col justify-center w-[30%] text-gray-500"
           id="adres"
         >
           <p className="w-full">
@@ -43,7 +43,7 @@ const Footer = ({ sirketler }) => {
           </div>
         </div>
         <div
-          className="w-4/12 flex flex-col items-center gap-1 text-blue-500 text-base font-light"
+          className="w-[40%] flex flex-col items-center gap-1 text-blue-500 text-base font-light"
           id="sirketler"
         >
           {sirketler.map((sirket) => (
@@ -53,7 +53,7 @@ const Footer = ({ sirketler }) => {
           ))}
         </div>
         <div
-          className="w-4/12 grid place-items-end text pb-5 text-gray-500"
+          className="w-[30%] grid place-items-end text pb-5 text-gray-500"
           id="info"
         >
           <p>2017 © aKare Bilişim Hizmetleri</p>

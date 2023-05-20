@@ -27,13 +27,13 @@ const Navi = () => {
         <div className="flex justify-center w-[40%] ">
           <Link to="/">
             <img
-              className="align-middle min-h-[50px] h-8  "
+              className="align-middle min-h-[60px] h-10  "
               src="https://akarebilisim.com.tr/images/logoNew3.png"
               alt=""
             />
           </Link>
         </div>
-        <ul className="flex font-dosis font-medium text-sm menu-item mb-3 px-1 nav mr-3 items-center text-gray-500 shrink-1">
+        <ul className="flex font-dosis font-medium text-sm menu-item mb-3 px-1 nav mr-3 justify-center items-center text-gray-500 shrink-1">
           <Link to="/">
             <li className="hover:text-white px-2 font-medium hover:cursor-pointer py-3  hover:bg-gray-400 h-10 cursor-pointer">
               ANA SAYFA
