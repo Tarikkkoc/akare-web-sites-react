@@ -15,6 +15,10 @@ font-size: small;
         justify-content: space-between;
     }
 
+    .animation {
+        border: none;
+    }
+
     .toggle button{
         height: 20%;
     }
