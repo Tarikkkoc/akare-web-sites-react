@@ -1,15 +1,22 @@
 @media (max-width: 780px){
     .toggle{
         display: block;
-        float: right;
+        /* float: right; */
     }
     .dropdown{
-position: relative;
-top: px;
-right: 0px;
-font-size: small;
-    }
-
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0px;
+    font-size: 14px;
+    z-index: 10;
+    } 
+    .matrix-container {
+        font-family: 'Courier New', monospace;
+        color: green; 
+        position: relative;
+        z-index: 1;
+      }
     .header-nav{
         display: flex;
         justify-content: space-between;
@@ -74,6 +81,8 @@ font-size: small;
     .a{
         font-family: Dos;
     }
+       
+    
 }
 .text{
     font-size: 17px;
@@ -85,12 +94,13 @@ font-size: small;
 
 .menu-background {
     background-image: url("https://akarebilisim.com.tr/images/orta.jpg");
+
 }
 
 .matrix-container {
     font-family: 'Courier New', monospace;
-    color: green;
-    /* Diğer stiller burada belirtilebilir */
+    color: green; 
+    
   }
   
   .matrix-row {

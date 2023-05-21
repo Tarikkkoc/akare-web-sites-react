@@ -69,19 +69,19 @@ const Navi = () => {
             <div className="dropdown bg-slate-100">
               <ul>
                 <Link to="/">
-                  <li className="border-2">ANA SAYFA</li>
+                  <li className="border-2 py-2.5">ANA SAYFA</li>
                 </Link>
                 <Link to="/projelerimiz">
-                  <li className="border-2">PROJELERİMİZ</li>
+                  <li className="border-2 py-2.5">PROJELERİMİZ</li>
                 </Link>
                 <Link to="/hizmetlerimiz">
-                  <li className="border-2">HİZMETLERİMİZ</li>
+                  <li className="border-2 py-2.5">HİZMETLERİMİZ</li>
                 </Link>
                 <Link to="/kurumsal">
-                  <li className="border-2">KURUMSAL</li>
+                  <li className="border-2 py-2.5">KURUMSAL</li>
                 </Link>
                 <Link to="/iletisim">
-                  <li className="border-2">İLETİŞİM</li>
+                  <li className="border-2 py-2.5">İLETİŞİM</li>
                 </Link>
               </ul>
             </div>
