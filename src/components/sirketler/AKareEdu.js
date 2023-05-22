@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PhotoDiv from "../common/PhotoDiv";
 import EduBody from "./EduBody";
 
 const AKareEdu = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <PhotoDiv

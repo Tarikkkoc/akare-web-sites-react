@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Body from "./Body";
 import PhotoDiv from "../common/PhotoDiv";
 
 const Projelerimiz = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <PhotoDiv

@@ -8,7 +8,7 @@
     width: 100%;
     top: 100%;
     left: 0px;
-    font-size: 14px;
+    font-size: 15px;
     z-index: 10;
     } 
     .matrix-container {
@@ -27,7 +27,7 @@
     }
 
     .toggle button{
-        height: 20%;
+        height: 100%;
     }
     .nav{
         display: none;

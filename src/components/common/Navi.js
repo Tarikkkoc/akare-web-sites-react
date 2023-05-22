@@ -62,7 +62,11 @@ const Navi = () => {
         </ul>
 
         <div className="toggle justify-end hidden" ref={container}>
-          <button type="button" class="button" onClick={handleButtonClick}>
+          <button
+            type="button"
+            className="button text-2xl pr-3"
+            onClick={handleButtonClick}
+          >
             ☰
           </button>
           {open && (

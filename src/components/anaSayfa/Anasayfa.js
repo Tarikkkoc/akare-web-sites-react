@@ -6,6 +6,7 @@ const Anasayfa = ({ sirketler }) => {
   const [matrixRows, setMatrixRows] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const matrixCode1 = "REACTISAWESOME";
     const matrixCode2 = "MICROSOFTDEVPOWER";
     const matrixCode3 = "GOOGLECODEMASTERS";
@@ -35,7 +36,7 @@ const Anasayfa = ({ sirketler }) => {
             className="min-h-[95px] h-[55%] "
           ></img>
         </div>
-        <div className="w-1/2 asd flex items-center justify-center">
+        <div className="w-1/2 flex items-center justify-center">
           <div className="matrix-container flex justify-center items-center animation bg-slate-100 rounded-[5%] flex-col border-2 border-orange-700 w-[40%] h-[50%] min-h-[50%]">
             {matrixRows.map((row, index) => (
               <div key={index} className="matrix-row">
