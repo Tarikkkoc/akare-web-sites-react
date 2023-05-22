@@ -3,7 +3,7 @@ import React from "react";
 const PhotoDiv = ({ title, img }) => {
   return (
     <div className=" bg-slate-200 flex justify-center menu-background bg-cover border-b-2 border-slate-300 ">
-      <div className="container mx-auto mt-0.5 photoDiv justify- justify-center flex">
+      <div className="container mx-auto mt-0.5 photoDiv px-6 justify-center flex">
         <div className="w-1/4 pt-10  text-4xl font-normal text-orange-500 ">
           {title}
         </div>

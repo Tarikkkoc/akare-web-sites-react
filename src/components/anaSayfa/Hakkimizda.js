@@ -9,7 +9,7 @@ const Hakkimizda = ({
 }) => {
   return (
     <div className="lg:pl-32 lg:pr-32 pt-5 pb-5 hakkimizda">
-      <div className="flex justify-center container mx-auto gap-8 hakkimizda2">
+      <div className="flex justify-center container mx-auto px-6 gap-8 hakkimizda2">
         <div
           id="onceGuvenlik"
           className="border-2 w-[36%] safety lg:w-[50%] p-5"

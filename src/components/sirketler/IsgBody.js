@@ -4,8 +4,8 @@ const IsgBody = () => {
   return (
     <div className="pt-10 pb-10">
       <div className="container mx-auto px-6 gap-2 hakkimizda flex justify-center">
-        <div className="w-1/2 flex flex-col text font-light text-gray-500 gap-4">
-          <div>
+        <div className="w-1/2 iletisim1 text font-light text-gray-500 gap-4">
+          <div className="w-full">
             <h3>
               <span className="text-4xl font-normal text-orange-500">
                 AKARE
@@ -27,7 +27,7 @@ const IsgBody = () => {
               farklı bir lisanslama ile firmanıza da kurulum yapılmaktadır.
             </p>
           </div>
-          <div className="flex iletisimInput gap-32">
+          <div className="flex pt-5 iletisimInput gap-32">
             <div id="riskAnalizi">
               <h3 className="text-3xl font-normal text-orange-500">
                 Risk Analizi
@@ -51,8 +51,8 @@ const IsgBody = () => {
               </ul>
             </div>
           </div>
-          <div className="flex iletisimInput gap-32">
-            <div id="isgFormlari">
+          <div className="flex pt-5 iletisimInput gap-32">
+            <div id="isgFormlari ">
               <h3 className="text-3xl font-normal text-orange-500">
                 İSG Formları
               </h3>
@@ -78,7 +78,7 @@ const IsgBody = () => {
               </ul>
             </div>
           </div>
-          <div className="flex iletisimInput gap-32 pr-2 pl-2">
+          <div className="flex iletisimInput pt-5 gap-32 pr-2 pl-2">
             <div id="yapilanmalar">
               <h3 className="text-3xl font-normal text-orange-500">
                 Yapılanmalar

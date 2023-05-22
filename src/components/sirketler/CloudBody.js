@@ -3,7 +3,7 @@ import React from "react";
 const CloudBody = () => {
   return (
     <div className="  pt-10 pb-10  gap-2 ">
-      <div className="container mx-auto p-4 hakkimizda flex justify-center">
+      <div className="container mx-auto p-4 gap-2 hakkimizda flex justify-center">
         <div className="w-1/2 flex flex-col text font-light text-gray-500 gap-2 hakkimizda2">
           <h2 className="text-4xl font-normal text-orange-500">
             <span className="text-orange-500">AKARE</span>

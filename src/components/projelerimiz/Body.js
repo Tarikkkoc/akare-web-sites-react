@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Body = () => {
   return (
     <div className=" gap-3 pt-5 pb-10 flex flex-col hakkimizda">
-      <div className="container flex flex-col gap-6 justify-center mx-auto">
+      <div className="container flex flex-col gap-6 px-6 justify-center mx-auto">
         <div
           id="aKareISG"
           className="text font-normal text-gray-500 flex justify-center gap-10 hakkimizda2"

@@ -3,7 +3,7 @@ import React from "react";
 const Body = () => {
   return (
     <div className=" gap-5  hakkimizda">
-      <div className="container mx-auto py-8 flex flex-col justify-center">
+      <div className="container mx-auto px-6 py-8 flex flex-col justify-center">
         <div
           id="yazilimHizmeti"
           className="text font-normal text-gray-500 flex justify-center gap-2 hakkimizda2"
