@@ -90,7 +90,31 @@
     .textAnimation{
         display: none;
     }
+    .iletisim {
+        display: flex;
+        align-items: center;
+    }
+    .iletisimBtn {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .iletisim1 {
+        
+        width: 100%;
+    }
+    .sirketImg {
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
+    }
+    .iletisimInput {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
        
+    }   
     
 }
 .text{
