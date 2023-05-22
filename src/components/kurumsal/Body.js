@@ -184,7 +184,7 @@ const Body = () => {
 
   return (
     <div className="menu hakkimizda">
-      <div className="container mx-auto justify-center ">
+      <div className="container mx-auto justify-center min-w-[70%] w-[70%]">
         <ul className="flex gap-1 mt-5 text-blue-500 font-light hakkimizda2 ">
           <li
             id={selected === "hakkimizda" ? "selected" : ""}
