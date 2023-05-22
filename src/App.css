@@ -32,7 +32,14 @@
     .nav{
         display: none;
     }
-   
+   .hizmetImg{
+    width: 100%;
+    display: grid;
+    place-items: center;
+   }
+   .hizmetP{
+    width: 100%;
+   }
     .photoDiv{
         display: flex;
         flex-direction: column;
