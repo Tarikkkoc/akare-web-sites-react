@@ -3,7 +3,7 @@ import React from "react";
 const IsgBody = () => {
   return (
     <div className="pt-10 pb-10">
-      <div className="container mx-auto p-4 gap-2 hakkimizda flex justify-center">
+      <div className="container mx-auto px-6 gap-2 hakkimizda flex justify-center">
         <div className="w-1/2 flex flex-col text font-light text-gray-500 gap-4">
           <div>
             <h3>
