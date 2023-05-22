@@ -51,17 +51,20 @@ function App() {
   return (
     <div className="">
       <Navi />
-      <Routes>
-        <Route path="/" element={<Anasayfa sirketler={sirketler} />} />
-        <Route path="/projelerimiz" element={<Projelerimiz />} />
-        <Route path="/hizmetlerimiz" element={<Hizmetlerimiz />} />
-        <Route path="/iletisim" element={<Iletisim />} />
-        <Route path="/kurumsal" element={<Kurumsal />} />
-        <Route path="/akarecloud" element={<AKareCloud />} />
-        <Route path="/akarepentest" element={<AKarePentest />} />
-        <Route path="/akareisg" element={<AKareIsg />} />
-        <Route path="/akareedu" element={<AKareEdu />} />
-      </Routes>
+      <div className="container mx-auto px-5">
+        <Routes>
+          <Route path="/" element={<Anasayfa sirketler={sirketler} />} />
+          <Route path="/projelerimiz" element={<Projelerimiz />} />
+          <Route path="/hizmetlerimiz" element={<Hizmetlerimiz />} />
+          <Route path="/iletisim" element={<Iletisim />} />
+          <Route path="/kurumsal" element={<Kurumsal />} />
+          <Route path="/akarecloud" element={<AKareCloud />} />
+          <Route path="/akarepentest" element={<AKarePentest />} />
+          <Route path="/akareisg" element={<AKareIsg />} />
+          <Route path="/akareedu" element={<AKareEdu />} />
+        </Routes>
+      </div>
+
       <Footer sirketler={sirketler} />
     </div>
   );
