@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Sirketler = ({ sirketler }) => {
   return (
     <div className="mt-3">
-      <div className="container sirketler flex justify-center justify-around px-12 mx-auto">
+      <div className="container sirketler flex justify-center justify-around px-36 mx-auto">
         {sirketler.map((sirket) => (
           <div className="w-32 flex">
             <Link to={`/${sirket.link}`}>

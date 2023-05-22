@@ -12,7 +12,7 @@ const Hakkimizda = ({
       <div className="flex justify-center container mx-auto gap-8 hakkimizda2">
         <div
           id="onceGuvenlik"
-          className="border-2 w-[36%] safety lg:w-[40%] p-5"
+          className="border-2 w-[36%] safety lg:w-[50%] p-5"
         >
           <div>
             <img
@@ -52,7 +52,7 @@ const Hakkimizda = ({
         </div>
         <div
           id="akilliCozumler"
-          className="border-2 safety lg:w-[40%] w-[50%] p-5"
+          className="border-2 safety lg:w-[50%] w-[50%] p-5"
         >
           <div className="flex justify-end">
             <img

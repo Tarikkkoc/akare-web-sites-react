@@ -183,65 +183,67 @@ const Body = () => {
   };
 
   return (
-    <div className="menu flex flex-col pr-32 pl-32 hakkimizda">
-      <ul className="flex gap-1 mt-5 text-blue-500 font-light hakkimizda2 ">
-        <li
-          id={selected === "hakkimizda" ? "selected" : ""}
-          className={` cursor-pointer ${
-            selected === "hakkimizda"
-              ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
-              : "bg-blue-400 text-gray-700 rounded-lg text p-2 hover:bg-blue-100"
-          }`}
-          onClick={() => handleClick("hakkimizda")}
-        >
-          Hakkımızda
-        </li>
-        <li
-          id={selected === "vizyon" ? "selected" : ""}
-          className={` cursor-pointer ${
-            selected === "vizyon"
-              ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
-              : "bg-blue-400 text-gray-700 text rounded-lg p-2 hover:bg-blue-100"
-          }`}
-          onClick={() => handleClick("vizyon")}
-        >
-          Vizyon-Misyon
-        </li>
-        <li
-          id={selected === "politika" ? "selected" : ""}
-          className={` cursor-pointer ${
-            selected === "politika"
-              ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
-              : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
-          }`}
-          onClick={() => handleClick("politika")}
-        >
-          BGYS Politikamız
-        </li>
-        <li
-          id={selected === "arge" ? "selected" : ""}
-          className={` cursor-pointer ${
-            selected === "arge"
-              ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
-              : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
-          }`}
-          onClick={() => handleClick("arge")}
-        >
-          Arge Çalışmalarımız
-        </li>
-        <li
-          id={selected === "kurumsal" ? "selected" : ""}
-          className={` cursor-pointer ${
-            selected === "kurumsal"
-              ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
-              : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
-          }`}
-          onClick={() => handleClick("kurumsal")}
-        >
-          Kurumsal Bilgilerimiz
-        </li>
-      </ul>
-      <div className="content">{getContent()}</div>
+    <div className="menu hakkimizda">
+      <div className="container mx-auto justify-center min-w-[60%] w-[60%]">
+        <ul className="flex gap-1 mt-5 text-blue-500 font-light hakkimizda2 ">
+          <li
+            id={selected === "hakkimizda" ? "selected" : ""}
+            className={` cursor-pointer ${
+              selected === "hakkimizda"
+                ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
+                : "bg-blue-400 text-gray-700 rounded-lg text p-2 hover:bg-blue-100"
+            }`}
+            onClick={() => handleClick("hakkimizda")}
+          >
+            Hakkımızda
+          </li>
+          <li
+            id={selected === "vizyon" ? "selected" : ""}
+            className={` cursor-pointer ${
+              selected === "vizyon"
+                ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
+                : "bg-blue-400 text-gray-700 text rounded-lg p-2 hover:bg-blue-100"
+            }`}
+            onClick={() => handleClick("vizyon")}
+          >
+            Vizyon-Misyon
+          </li>
+          <li
+            id={selected === "politika" ? "selected" : ""}
+            className={` cursor-pointer ${
+              selected === "politika"
+                ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
+                : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
+            }`}
+            onClick={() => handleClick("politika")}
+          >
+            BGYS Politikamız
+          </li>
+          <li
+            id={selected === "arge" ? "selected" : ""}
+            className={` cursor-pointer ${
+              selected === "arge"
+                ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
+                : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
+            }`}
+            onClick={() => handleClick("arge")}
+          >
+            Arge Çalışmalarımız
+          </li>
+          <li
+            id={selected === "kurumsal" ? "selected" : ""}
+            className={` cursor-pointer ${
+              selected === "kurumsal"
+                ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
+                : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
+            }`}
+            onClick={() => handleClick("kurumsal")}
+          >
+            Kurumsal Bilgilerimiz
+          </li>
+        </ul>
+        <div className="content">{getContent()}</div>
+      </div>
     </div>
   );
 };

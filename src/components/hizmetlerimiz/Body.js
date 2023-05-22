@@ -2,7 +2,7 @@ import React from "react";
 
 const Body = () => {
   return (
-    <div className="flex flex-col gap-5  hakkimizda">
+    <div className=" gap-5  hakkimizda">
       <div className="container mx-auto py-8 flex flex-col justify-center">
         <div
           id="yazilimHizmeti"
