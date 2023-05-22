@@ -29,20 +29,22 @@ const Anasayfa = ({ sirketler }) => {
   }, []);
   return (
     <div className="mt-0.5">
-      <div className="bg-slate-200 menu-background bg-cover flex border-b-2 border-slate-300 photoDiv">
-        <div className="flex w-1/2 h-1/2 photoDivImg items-center justify-end">
-          <img
-            src="https://akarebilisim.com.tr/images/cloud-servers.gif"
-            className="min-h-[95px] h-[55%] "
-          ></img>
-        </div>
-        <div className="w-1/2 flex items-center justify-center">
-          <div className="matrix-container flex justify-center items-center animation bg-slate-100 rounded-[5%] flex-col border-2 border-orange-700 w-[40%] h-[50%] min-h-[50%]">
-            {matrixRows.map((row, index) => (
-              <div key={index} className="matrix-row">
-                {row}
-              </div>
-            ))}
+      <div className="bg-slate-200 menu-background bg-cover  border-b-2 border-slate-300 ">
+        <div className="flex container mx-auto justify-center photoDiv">
+          <div className="flex w-1/2 h-1/2 photoDivImg items-center justify-center">
+            <img
+              src="https://akarebilisim.com.tr/images/cloud-servers.gif"
+              className="min-h-[100%] h-[55%] "
+            ></img>
+          </div>
+          <div className="w-1/2 flex items-center justify-center textAnimation">
+            <div className="matrix-container flex justify-center items-center animation bg-slate-100 rounded-[5%] flex-col border-2 border-orange-700 w-[70%] h-[60%] min-h-[50%]">
+              {matrixRows.map((row, index) => (
+                <div key={index} className="matrix-row">
+                  {row}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

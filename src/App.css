@@ -52,7 +52,7 @@
         display: flex;
         justify-content: center;
         place-items: center;
-        height: 50%;
+        height: 100%;
     }
     .sirketler{
         display: flex;
@@ -87,6 +87,9 @@
     }
     .a{
         font-family: Dos;
+    }
+    .textAnimation{
+        display: none;
     }
        
     
