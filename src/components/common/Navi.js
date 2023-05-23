@@ -12,7 +12,11 @@ const Navi = () => {
   };
 
   const handleButtonClick = () => {
-    setOpen(!open);
+    setOpen((open) => !open);
+  };
+
+  const a = () => {
+    setOpen(false);
   };
 
   useEffect(() => {
@@ -22,9 +26,9 @@ const Navi = () => {
     };
   }, []);
   return (
-    <div className="shadow-lg bg-slate-100 border-t-2 border-red-500 sticky top-0">
+    <div className="shadow-lg z-10 bg-slate-100 border-t-2 border-red-500 sticky top-0">
       <div className="flex header-nav p items-center container mx-auto">
-        <div className="flex justify-center min-w-[50%] w-[50%] ">
+        <div className="flex justify-center min-w-[45%] w-[50%] ">
           <Link to="/">
             <img
               className="align-middle w-[100%] min-w-[100%] min-h-[60px] h-10  "
@@ -61,7 +65,7 @@ const Navi = () => {
           </Link>
         </ul>
 
-        <div className="toggle justify-end hidden" ref={container}>
+        <div className="toggle justify-end hidden " ref={container}>
           <button
             type="button"
             className="button text-2xl pr-3"
@@ -71,21 +75,21 @@ const Navi = () => {
           </button>
           {open && (
             <div className="dropdown bg-slate-100">
-              <ul>
-                <Link to="/">
-                  <li className="border-2 py-2.5">ANA SAYFA</li>
+              <ul className="colorNavi text-sm leading-5 py-2.5 px-3">
+                <Link to="/" onClick={handleButtonClick}>
+                  <li className="py-2.5">ANA SAYFA</li>
                 </Link>
-                <Link to="/projelerimiz">
-                  <li className="border-2 py-2.5">PROJELERİMİZ</li>
+                <Link to="/projelerimiz" onClick={handleButtonClick}>
+                  <li className="py-2.5">PROJELERİMİZ</li>
                 </Link>
-                <Link to="/hizmetlerimiz">
-                  <li className="border-2 py-2.5">HİZMETLERİMİZ</li>
+                <Link to="/hizmetlerimiz" onClick={handleButtonClick}>
+                  <li className="py-2.5">HİZMETLERİMİZ</li>
                 </Link>
-                <Link to="/kurumsal">
-                  <li className="border-2 py-2.5">KURUMSAL</li>
+                <Link to="/kurumsal" onClick={handleButtonClick}>
+                  <li className="py-2.5">KURUMSAL</li>
                 </Link>
-                <Link to="/iletisim">
-                  <li className="border-2 py-2.5">İLETİŞİM</li>
+                <Link to="/iletisim" onClick={handleButtonClick}>
+                  <li className="py-2.5">İLETİŞİM</li>
                 </Link>
               </ul>
             </div>

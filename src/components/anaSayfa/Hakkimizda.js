@@ -12,7 +12,7 @@ const Hakkimizda = ({
       <div className="flex size-full hakkimizdaDesign justify-center container mx-auto px-6 gap-8 hakkimizda2">
         <div
           id="onceGuvenlik"
-          className="border-2 w-[36%] safety lg:w-[50%] p-5"
+          className="border-2 w-[50%] safety lg:w-[50%] p-5"
         >
           <div>
             <img

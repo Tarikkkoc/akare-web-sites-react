@@ -29,16 +29,16 @@ const Anasayfa = ({ sirketler }) => {
   }, []);
   return (
     <div className="mt-0.5">
-      <div className="bg-slate-200 menu-background bg-cover  border-b-2 border-slate-300 ">
+      <div className=" bg-[url('https://akarebilisim.com.tr/images/orta.jpg')] bg-cover border-b-2 border-slate-300 ">
         <div className="flex container mx-auto justify-center photoDiv">
-          <div className="flex w-1/2 h-1/2 py-6 photoDivImg items-center justify-center">
+          <div className="flex h-1/2 photoDivImg items-center justify-center">
             <img
               src="https://akarebilisim.com.tr/images/cloud-servers.gif"
-              className="min-h-[100%] h-[50%] "
+              className="min-h-[80%] h-[50%] "
             ></img>
           </div>
           <div className="w-1/2 flex items-center justify-center textAnimation">
-            <div className="matrix-container flex justify-center items-center animation bg-slate-100 rounded-[5%] flex-col border-2 border-orange-700 w-[70%] h-[60%] min-h-[50%]">
+            <div className="matrix-container flex justify-center items-center animation  rounded-[5%] flex-col border-2 border-slate-200 min-w-[61%] p-4 w-[50%] h-[60%] min-h-[50%]">
               {matrixRows.map((row, index) => (
                 <div key={index} className="matrix-row">
                   {row}
