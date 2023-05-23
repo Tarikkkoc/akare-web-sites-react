@@ -9,7 +9,8 @@ const AKareEdu = () => {
   return (
     <div>
       <PhotoDiv
-        title="AKAREEDU"
+        title="AKARE"
+        title1="EDU"
         img="https://akarebilisim.com.tr/images/edu.gif"
       />
       <EduBody />

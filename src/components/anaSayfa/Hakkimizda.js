@@ -8,11 +8,11 @@ const Hakkimizda = ({
   akilliCozumlerTitle,
 }) => {
   return (
-    <div className="lg:pl-32 lg:pr-32 pt-5 pb-5 hakkimizda">
+    <div className="lg:pl-32 lg:pr-32 pt-5 pb-5 hakkimizda bg-[url('https://akarebilisim.com.tr/images/bg.png')]">
       <div className="flex justify-center container mx-auto px-6 gap-8 hakkimizda2">
         <div
           id="onceGuvenlik"
-          className="border-2 w-[36%] safety lg:w-[50%] p-5"
+          className="border-2 w-[36%] safety lg:w-[40%] p-5"
         >
           <div>
             <img
@@ -22,11 +22,11 @@ const Hakkimizda = ({
             />
           </div>
           <div>
-            <h2 className="text-orange-500 text-3xl font-normal mt-5 mb-2.5">
+            <h2 className="colorOrange text-3xl font-normal mt-5 mb-2.5">
               {onceGuvenlikTitle}
             </h2>
           </div>
-          <div className="text leading-6 text-gray-500 flex flex-col gap-2">
+          <div className="text leading-6 colorGray flex flex-col gap-2">
             <p className="">
               Günümüzde bilgi toplumu olarak bize düşen bilgiyi korumak ve
               güvenli bir şekilde erişilmesini sağlamaktır.
@@ -52,7 +52,7 @@ const Hakkimizda = ({
         </div>
         <div
           id="akilliCozumler"
-          className="border-2 safety lg:w-[50%] w-[50%] p-5"
+          className="border-2 safety lg:w-[40%] w-[40%] p-5"
         >
           <div className="flex justify-end">
             <img
@@ -62,11 +62,11 @@ const Hakkimizda = ({
             />
           </div>
           <div>
-            <h2 className="text-right text-orange-500 text-3xl font-normal mt-5 mb-2.5">
+            <h2 className="text-right colorOrange text-3xl font-normal mt-5 mb-2.5">
               {akilliCozumlerTitle}
             </h2>
           </div>
-          <div className="flex flex-col leading-6 gap-2 text text-gray-500">
+          <div className="flex flex-col leading-6 gap-2 text colorGray">
             <p className="text-right">
               Teknolojinin artık her yerde olduğu bu dönemde, veriye gerek mobil
               platformlardan gerek masaüstü uygulamalardan hızlıca erişmek artık

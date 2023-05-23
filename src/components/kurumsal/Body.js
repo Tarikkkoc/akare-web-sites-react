@@ -102,7 +102,7 @@ const Body = () => {
         );
       case "politika":
         return (
-          <div className="text font-light flex flex-col gap-2 text-gray-500 gap-2 pt-5 pb-10">
+          <div className=" text font-light flex flex-col gap-2 text-gray-500 gap-2 pt-5 pb-10">
             <p>
               aKare olarak, Varlıklarımızın gizlilik, bütünlük ve
               erişilebilirlik özelliklerinin korunmasını ve risklerin kabul
@@ -152,7 +152,7 @@ const Body = () => {
         );
       case "kurumsal":
         return (
-          <div className="text font-light text-gray-500 pt-5 flex flex-col gap-2 pb-10">
+          <div className="bg-[url('https://akarebilisim.com.tr/images/bg.png')] text font-light text-gray-500 pt-5 flex flex-col gap-2 pb-10">
             <div className="flex">
               <div className="col-sm-2 w-1/6">Ünvan</div>
               <div className="col-sm-10">
@@ -185,63 +185,66 @@ const Body = () => {
   return (
     <div className="menu hakkimizda">
       <div className="container mx-auto justify-center min-w-[80%] w-[80%]">
-        <ul className="flex gap-1 mt-5 text-blue-500 font-light hakkimizda2 ">
+        <ul className="flex mt-5 text-blue-500 font-light hakkimizda2 ">
           <li
             id={selected === "hakkimizda" ? "selected" : ""}
             className={` cursor-pointer ${
               selected === "hakkimizda"
-                ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
-                : "bg-blue-400 text-gray-700 rounded-lg text p-2 hover:bg-blue-100"
+                ? "rounded-t px-2.5 py-3.5 text-gray-700 text border-x-2 border-t-2"
+                : " text colorKurumsal px-2.5 py-3.5 hover:bg-gray-200 border-b-2"
             }`}
             onClick={() => handleClick("hakkimizda")}
           >
-            Hakkımızda
+            HAKKIMIZDA
           </li>
           <li
             id={selected === "vizyon" ? "selected" : ""}
             className={` cursor-pointer ${
               selected === "vizyon"
-                ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
-                : "bg-blue-400 text-gray-700 text rounded-lg p-2 hover:bg-blue-100"
+                ? " rounded-t px-2.5 py-3.5 text-gray-700 text border-x-2 border-t-2"
+                : "text colorKurumsal px-2.5 py-3.5 hover:bg-gray-200 border-b-2"
             }`}
             onClick={() => handleClick("vizyon")}
           >
-            Vizyon-Misyon
+            VİZYON-MİSYON
           </li>
           <li
             id={selected === "politika" ? "selected" : ""}
             className={` cursor-pointer ${
               selected === "politika"
-                ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
-                : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
+                ? "rounded-t px-2.5 py-3.5 text-gray-700 text border-x-2 border-t-2"
+                : "text colorKurumsal px-2.5 py-3.5 hover:bg-gray-200 border-b-2"
             }`}
             onClick={() => handleClick("politika")}
           >
-            BGYS Politikamız
+            BGYS POLİTİKAMIZ
           </li>
           <li
             id={selected === "arge" ? "selected" : ""}
             className={` cursor-pointer ${
               selected === "arge"
-                ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
-                : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
+                ? "rounded-t px-2.5 py-3.5 text-gray-700 text border-x-2 border-t-2"
+                : "text colorKurumsal px-2.5 py-3.5 hover:bg-gray-200"
             }`}
             onClick={() => handleClick("arge")}
           >
-            Arge Çalışmalarımız
+            ARGE ÇALIŞMALARIMIZ
           </li>
           <li
             id={selected === "kurumsal" ? "selected" : ""}
             className={` cursor-pointer ${
               selected === "kurumsal"
-                ? "rounded-lg p-2 bg-blue-300 text-white text border-blue-200"
-                : "bg-blue-400 text-gray-700 rounded-lg p-2 text hover:bg-blue-100"
+                ? "rounded-t px-2.5 py-3.5 text-gray-700 text border-x-2 border-t-2"
+                : "text colorKurumsal px-2.5 py-3.5 hover:bg-gray-200"
             }`}
             onClick={() => handleClick("kurumsal")}
           >
-            Kurumsal Bilgilerimiz
+            KURUMSAL BİLGİLERİMİZ
           </li>
         </ul>
+        {/* <div className=" grid place-items-center">
+          <hr className="mb-5 border-t w-[80%]" />
+        </div> */}
         <div className="content">{getContent()}</div>
       </div>
     </div>

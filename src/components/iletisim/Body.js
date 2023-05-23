@@ -2,7 +2,7 @@ import React from "react";
 
 const Body = () => {
   return (
-    <div className=" pt-10 pb-10 ">
+    <div className="bg-[url('https://akarebilisim.com.tr/images/bg.png')] pt-10 pb-10 ">
       <div className="flex container hakkimizda mx-auto gap-6 px-6 justify-center">
         <div
           className="text font-normal text-gray-500 flex flex-col gap-2"
@@ -41,7 +41,7 @@ const Body = () => {
           <form>
             <div className="flex iletisimInput w-full gap-2">
               <input
-                className="p-2 iletisim1  w-1/2 border border-solid border-gray-300 rounded-md text"
+                className="p-2 iletisim1  w-1/2 border border-solid border-gray-300 rounded-md text focus:outline-none focus:ring-1 focus:ring-blue-500 focus:shadow-lg"
                 type="text"
                 id="name"
                 name="name"
@@ -49,7 +49,7 @@ const Body = () => {
                 required
               />{" "}
               <input
-                className="p-2 w-1/2 iletisim1 border border-solid border-gray-300 rounded-md text"
+                className="p-2 w-1/2 iletisim1 border border-solid border-gray-300 rounded-md text focus:outline-none focus:ring-1 focus:ring-blue-500 focus:shadow-lg"
                 type="email"
                 id="email"
                 name="email"
@@ -59,7 +59,7 @@ const Body = () => {
             </div>
             <div className="pt-5 w-full">
               <textarea
-                className="p-2 iletisim1 w-full border border-solid border-gray-300 rounded-md text"
+                className="p-2 iletisim1 w-full border border-solid border-gray-300 rounded-md text focus:outline-none focus:ring-1 focus:ring-blue-500 focus:shadow-lg"
                 id="message"
                 name="message"
                 placeholder="Mesajınız"
@@ -69,7 +69,7 @@ const Body = () => {
             </div>
             <div className="iletisimBtn">
               <button
-                className="bg-sky-200 float-right hover:bg-sky-400 border-none py-2 px-4 rounded-md text cursor-pointer"
+                className=" borderSubmit float-right hover:bg-sky-200 py-2 px-4 rounded-md text cursor-pointer"
                 type="submit"
               >
                 Gönder

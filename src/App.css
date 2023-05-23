@@ -1,4 +1,4 @@
-@media (max-width: 780px){
+@media (max-width: 850px){
     .toggle{
         display: block;
         /* float: right; */
@@ -40,20 +40,27 @@
    .hizmetP{
     width: 100%;
    }
+   .photoTitle{
+    height: 105%;
+   }
     .photoDiv{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        place-items: center;
-        height: 230px;
+        align-items: center;
+        height: 300px;
         padding-left: 20px;
+        padding-top: 10px;
     }
+
     .photoDivImg{
         display: flex;
         justify-content: center;
         place-items: center;
         height: 100%;
     }
+
+   
     .sirketler{
         display: flex;
         flex-direction: column;
@@ -108,13 +115,33 @@
         padding-right: 10px;
         padding-left: 10px;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .size-full {
+        width: 100%;
+        height: 100%;
     }
     .iletisimInput {
         display: flex;
         flex-direction: column;
         gap: 8px;
        
-    }   
+    }  
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .photoImg{
+        margin-top: 0;
+        margin-bottom: 5px;
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
     
 }
 .text{
@@ -125,15 +152,9 @@
     letter-spacing: 0.3em; /* Harfler arasında 0.5em boşluk */
   }
 
-.menu-background {
-    background-image: url("https://akarebilisim.com.tr/images/orta.jpg");
-
-}
-
 .matrix-container {
     font-family: 'Courier New', monospace;
     color: green; 
-    
   }
   
   .matrix-row {
@@ -149,7 +170,32 @@
   .matrix-row span {
     margin-right: 5px;
   }
+  .colorBlue{
+    color: #6AC6DC;
+  }
+  .colorOrange{
+    color: #FA5923;
+  }
 
+  .colorGray{
+    color: #818181;
+  }
+
+  .colorPhoto {
+    border-bottom: 3px solid;
+    border-color: #67cee1;
+  }
+
+  .colorKurumsal{
+    text-decoration-color: #337ab7;
+  }
+  
+  
+  .borderSubmit {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 12px 6px 12px;
+  }
   
   
   

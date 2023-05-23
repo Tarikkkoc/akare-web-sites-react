@@ -24,38 +24,38 @@ const Navi = () => {
   return (
     <div className="shadow-lg bg-slate-100 border-t-2 border-red-500 sticky top-0">
       <div className="flex header-nav p items-center container mx-auto">
-        <div className="flex justify-center w-[40%] ">
+        <div className="flex justify-center min-w-[40%] w-[40%] ">
           <Link to="/">
             <img
-              className="align-middle min-h-[60px] h-10  "
+              className="align-middle w-[100%] min-w-[100%] min-h-[60px] h-10  "
               src="https://akarebilisim.com.tr/images/logoNew3.png"
               alt=""
             />
           </Link>
         </div>
-        <ul className="flex font-dosis font-medium text-sm menu-item mb-3 px-1 nav mr-3 justify-start text-gray-500 shrink-1">
+        <ul className="flex w-[60%] font-dosis font-medium text-sm menu-item mb-3 px-1 nav mr-3 justify-start text-gray-500 shrink-1">
           <Link to="/">
-            <li className="hover:text-white px-2 font-medium hover:cursor-pointer py-3  hover:bg-gray-400 h-10 cursor-pointer">
+            <li className="hover:text-white p-3.5 font-medium hover:cursor-pointer hover:bg-gray-400 cursor-pointer">
               ANA SAYFA
             </li>
           </Link>
           <Link to="/projelerimiz">
-            <li className="hover:text-white px-2 font-medium hover:cursor-pointer py-3 hover:bg-gray-400 h-10 cursor-pointer">
+            <li className="hover:text-white p-3.5 font-medium hover:cursor-pointer  hover:bg-gray-400 cursor-pointer">
               PROJELERIMIZ
             </li>
           </Link>
           <Link to="/hizmetlerimiz">
-            <li className=" hover:text-white px-2 hover:cursor-pointer grid place-items-center hover:bg-gray-400 py-3 h-10 cursor-pointer">
+            <li className=" hover:text-white p-3.5 hover:cursor-pointer grid place-items-center hover:bg-gray-400 cursor-pointer">
               HIZMETLERIMIZ
             </li>{" "}
           </Link>
           <Link to="kurumsal">
-            <li className=" hover:text-white px-2 hover:cursor-pointer grid place-items-center hover:bg-gray-400 h-10 py-3 cursor-pointer">
+            <li className=" hover:text-white p-3.5 hover:cursor-pointer grid place-items-center hover:bg-gray-400 cursor-pointer">
               KURUMSAL
             </li>{" "}
           </Link>
           <Link to="/iletisim">
-            <li className="hover:text-white px-2 hover:cursor-pointer grid place-items-center hover:bg-gray-400 h-10 py-3 cursor-pointer">
+            <li className="hover:text-white p-3.5 hover:cursor-pointer grid place-items-center hover:bg-gray-400 cursor-pointer">
               ILETISIM
             </li>
           </Link>

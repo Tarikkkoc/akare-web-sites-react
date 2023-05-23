@@ -51,7 +51,6 @@ function App() {
   return (
     <div className="">
       <Navi />
-
       <Routes>
         <Route path="/" element={<Anasayfa sirketler={sirketler} />} />
         <Route path="/projelerimiz" element={<Projelerimiz />} />

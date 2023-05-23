@@ -31,10 +31,10 @@ const Anasayfa = ({ sirketler }) => {
     <div className="mt-0.5">
       <div className="bg-slate-200 menu-background bg-cover  border-b-2 border-slate-300 ">
         <div className="flex container mx-auto justify-center photoDiv">
-          <div className="flex w-1/2 h-1/2 photoDivImg items-center justify-center">
+          <div className="flex w-1/2 h-1/2 py-6 photoDivImg items-center justify-center">
             <img
               src="https://akarebilisim.com.tr/images/cloud-servers.gif"
-              className="min-h-[100%] h-[55%] "
+              className="min-h-[100%] h-[50%] "
             ></img>
           </div>
           <div className="w-1/2 flex items-center justify-center textAnimation">

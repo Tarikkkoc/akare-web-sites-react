@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Body from "./Body";
 import PhotoDiv from "../common/PhotoDiv";
-import Maps from "./Maps";
+// import Maps from "./Maps";
 
 const Iletisim = () => {
   useEffect(() => {
@@ -15,7 +15,7 @@ const Iletisim = () => {
         "
       />
       <Body />
-      <Maps />
+      {/* <Maps /> */}
     </div>
   );
 };

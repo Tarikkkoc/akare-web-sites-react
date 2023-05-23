@@ -9,7 +9,8 @@ const AKareIsg = () => {
   return (
     <div>
       <PhotoDiv
-        title="AKAREISG"
+        title="AKARE"
+        title1="ISG"
         img="https://akarebilisim.com.tr/images/isg.gif"
       />
       <IsgBody />

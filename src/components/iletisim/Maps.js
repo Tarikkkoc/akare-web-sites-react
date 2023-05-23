@@ -1,19 +1,71 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const Maps = () => {
-  const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+function Maps() {
+  const apiKey = process.env.REACT_APP_API_KEY;
+
+  console.log("asd" + apiKey);
+  useEffect(() => {
+    const initialize = () => {
+      const myLatlng = new window.google.maps.LatLng(32.9635, -117.0407);
+
+      const myOptions = {
+        zoom: 14,
+        center: myLatlng,
+        mapTypeId: window.google.maps.MapTypeId.ROADMAP,
+      };
+
+      const map = new window.google.maps.Map(
+        document.getElementById("map_canvas"),
+        myOptions
+      );
+
+      const contentString =
+        '<div id="content">' +
+        '<div id="restNotice">' +
+        "</div>" +
+        '<div id="bodyContent">' +
+        "<p><b>Restaurant</b></p>" +
+        "</div>" +
+        "</div>";
+
+      const infowindow = new window.google.maps.InfoWindow({
+        content: contentString,
+      });
+
+      const marker = new window.google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: "test",
+      });
+
+      window.google.maps.event.addListener(marker, "click", function () {
+        infowindow.open(map, marker);
+      });
+    };
+
+    const script = document.createElement("script");
+    script.src =
+      "http://maps.googleapis.com/maps/api/js?key=$`{apiKey}`&sensor=true";
+    script.async = true;
+    script.defer = true;
+    script.addEventListener("load", initialize);
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
-    <div className="grid place-items-center mb-5">
-      <iframe
-        title="Google Maps"
-        src="https://www.google.com/maps/place/aKare+Bilişim+Hizmetleri+Tic.+A.Ş./@40.9955705,28.7178645,17z/data=!3m1!4b1!4m6!3m5!1s0x14caa103cacc323f:0xf17eff41e2c3b2c1!8m2!3d40.9955666!4d28.7227354!16s%2Fg%2F12qfhx3lt&key=${AIzaSyChXyt_sGb33lX616iEA_m6F_vvoYeSAzA}" // Google Maps'e ait iframe kodu
-        className="w-[65%] min-w-[65%] overflow-hidden"
-        style={{ border: 0 }}
-        allowFullScreen=""
-        loading="lazy"
-      ></iframe>
+    <div className="flex justify-center mx-auto w-[70%]">
+      <div
+        className=""
+        id="map_canvas"
+        style={{ width: "300px", height: "300px" }}
+      ></div>
     </div>
   );
-};
+}
 
 export default Maps;

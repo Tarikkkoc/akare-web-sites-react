@@ -7,7 +7,7 @@ const Footer = ({ sirketler }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <div className="bg-neutral-800 pt-12 pb-5">
+    <div className="bg-neutral-800 pt-12 pb-5 border-t-2 border-red-500">
       <div className="w-full flex justify-center pt-2">
         <div onClick={handleScrollTop}>
           <img

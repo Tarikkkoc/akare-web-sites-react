@@ -9,7 +9,8 @@ const AKareCloud = () => {
   return (
     <div>
       <PhotoDiv
-        title="AKARECLOUD"
+        title="AKARE"
+        title1="CLOUD"
         img="https://akarebilisim.com.tr/images/cloud.gif"
       />
       <CloudBody />
