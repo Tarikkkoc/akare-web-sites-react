@@ -150,6 +150,11 @@
         align-items: center;
     } 
 
+    .hakkimizdaDesign {
+        display: grid;
+        place-items: center;
+    }
+
     .photoImg{
         margin-top: 0;
         margin-bottom: 5px;

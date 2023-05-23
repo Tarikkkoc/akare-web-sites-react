@@ -183,7 +183,7 @@ const Body = () => {
   };
 
   return (
-    <div className="menu hakkimizda">
+    <div className="menu bg-[url('https://akarebilisim.com.tr/images/bg.png')] hakkimizda">
       <div className="container mx-auto justify-center min-w-[80%] w-[80%]">
         <ul className="flex mt-5 text-blue-500 font-light hakkimizda2 ">
           <li
