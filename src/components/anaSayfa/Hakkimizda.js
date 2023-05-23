@@ -12,7 +12,7 @@ const Hakkimizda = ({
       <div className="flex justify-center container mx-auto px-6 gap-8 hakkimizda2">
         <div
           id="onceGuvenlik"
-          className="border-2 w-[36%] safety lg:w-[40%] p-5"
+          className="border-2 w-[36%] safety lg:w-[50%] p-5"
         >
           <div>
             <img
@@ -27,21 +27,21 @@ const Hakkimizda = ({
             </h2>
           </div>
           <div className="text leading-6 colorGray flex flex-col gap-2">
-            <p className="">
+            <p className=" mb-2.5">
               Günümüzde bilgi toplumu olarak bize düşen bilgiyi korumak ve
               güvenli bir şekilde erişilmesini sağlamaktır.
             </p>
-            <p>
+            <p className=" mb-2.5">
               Artık mükemmel bir yazılım yapmak ya da sistem kurmak yeterli bir
               unsur değil. Veriyi okurken ya da yazarken uyguladığınız güvenlik
               protokolleri ve bunların zaafiyetleri çok önem arzetmetedir.
             </p>
-            <p>
+            <p className=" mb-2.5">
               Kurumumuzun projelerde esas aldığı ve önceliği; yazılımdan
               başlayarak sistem kaynaklarına kadar devamlı ve sürdürülebilir bir
               yapıda denetlemektir.
             </p>
-            <p>
+            <p className=" mb-2.5">
               Bilginin güç olduğuna inan firmamız bünyesinde ISO27001 Baş
               denetçisi ve CEH sertifikalı güvenlik uzmanları barındırmaktadır.
             </p>
@@ -52,7 +52,7 @@ const Hakkimizda = ({
         </div>
         <div
           id="akilliCozumler"
-          className="border-2 safety lg:w-[40%] w-[40%] p-5"
+          className="border-2 safety lg:w-[50%] w-[50%] p-5"
         >
           <div className="flex justify-end">
             <img
@@ -67,22 +67,22 @@ const Hakkimizda = ({
             </h2>
           </div>
           <div className="flex flex-col leading-6 gap-2 text colorGray">
-            <p className="text-right">
+            <p className="text-right mb-2.5">
               Teknolojinin artık her yerde olduğu bu dönemde, veriye gerek mobil
               platformlardan gerek masaüstü uygulamalardan hızlıca erişmek artık
               gereklilik olmuştur.
             </p>
-            <p className="text-right">
+            <p className="text-right mb-2.5">
               Bunula beraber veri girişi sadece kullanıcıların bir giriş yapması
               ile değil sahadan IOT cihazlar ve sensörler yardımıyla da
               yapılmaktadır.
             </p>
-            <p className="text-right">
+            <p className="text-right mb-2.5">
               Toplanan veriyi analiz etmek işletmenizi en uygun şekilde
               yönetmenizi sağlamak için gerekli ARGE faaliyetlerini TEKNOKENT'te
               yürütmekteyiz.
             </p>
-            <p className="text-right">
+            <p className="text-right mb-2.5">
               Endüstri 4.0 kapsamında geleceğe ve teknolojinin faydalı şekilde
               kullanılmasına inanmaktayız.
             </p>

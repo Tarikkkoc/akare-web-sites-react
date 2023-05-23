@@ -7,7 +7,7 @@ const Footer = ({ sirketler }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <div className="bg-neutral-800 pt-12 pb-5 border-t-2 border-red-500">
+    <div className="colorFooter pt-12 pb-5 border-t-2 footer border-red-500">
       <div className="w-full flex justify-center pt-2">
         <div onClick={handleScrollTop}>
           <img
@@ -17,17 +17,21 @@ const Footer = ({ sirketler }) => {
           />
         </div>
       </div>
-      <div className="flex justify-around gap-5 px-28 pb-8 mt-5 footer">
+      <div className="flex justify-around gap-5 px-20 pb-8 mt-5 footer">
         <div
-          className=" gap-2 text flex flex-col justify-center w-[30%] text-gray-500"
+          className=" gap-2 text flex flex-col justify-center w-[30%] footerA text-gray-500"
           id="adres"
         >
-          <p className="w-full">
-            İstanbul Üniversitesi Avcılar Kampüsü, TEKNOKENT Z-15 Avcılar /
-            İstanbul
-          </p>
-          <p>(212) 210 63 13</p>
-          <div className="flex gap-2 pt-2.5">
+          <div>
+            <p className="w-full">
+              İstanbul Üniversitesi Avcılar Kampüsü, TEKNOKENT Z-15 Avcılar /
+              İstanbul
+            </p>
+          </div>
+          <div>
+            <p className="footerText">(212) 210 63 13</p>
+          </div>
+          <div className="flex gap-2 pt-2.5 footerIcon">
             <a href="https://www.youtube.com/channel/UCzTvHr5-gYWVWn_WHSRgaIg">
               <img
                 src="https://akarebilisim.com.tr/images/youtube.jpg"
@@ -43,7 +47,7 @@ const Footer = ({ sirketler }) => {
           </div>
         </div>
         <div
-          className="w-[40%] flex flex-col items-center gap-1 text-blue-500 text-base font-light"
+          className="w-[40%] footerA flex flex-col items-center gap-1 colorKurumsal text-base font-light"
           id="sirketler"
         >
           {sirketler.map((sirket) => (
@@ -53,7 +57,7 @@ const Footer = ({ sirketler }) => {
           ))}
         </div>
         <div
-          className="w-[30%] grid flex items-end justify-center text pb-5  text-gray-500"
+          className="w-[30%] footerA footerLast flex items-end justify-center text mt-10  text-gray-500"
           id="info"
         >
           <p>2017 © aKare Bilişim Hizmetleri</p>

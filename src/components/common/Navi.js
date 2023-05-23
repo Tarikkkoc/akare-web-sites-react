@@ -24,7 +24,7 @@ const Navi = () => {
   return (
     <div className="shadow-lg bg-slate-100 border-t-2 border-red-500 sticky top-0">
       <div className="flex header-nav p items-center container mx-auto">
-        <div className="flex justify-center min-w-[40%] w-[40%] ">
+        <div className="flex justify-center min-w-[50%] w-[50%] ">
           <Link to="/">
             <img
               className="align-middle w-[100%] min-w-[100%] min-h-[60px] h-10  "

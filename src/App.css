@@ -91,6 +91,20 @@
         align-items: center;
         gap: 15px;
     }
+
+    .footerA {
+        width: 100%;
+    }
+
+    .footerIcon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerText{
+        text-align: center;
+    }
+
     .a{
         font-family: Dos;
     }
@@ -181,13 +195,17 @@
     color: #818181;
   }
 
+  .colorFooter {
+    background-color: #252525;
+  }
+
   .colorPhoto {
     border-bottom: 3px solid;
     border-color: #67cee1;
   }
 
   .colorKurumsal{
-    text-decoration-color: #337ab7;
+    color: #337ab7;
   }
   
   
