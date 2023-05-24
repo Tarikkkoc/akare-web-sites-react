@@ -224,7 +224,7 @@ const Body = () => {
             className={` cursor-pointer ${
               selected === "arge"
                 ? "rounded-t px-2.5 py-3.5 text-gray-700 text border-x-2 border-t-2"
-                : "text colorKurumsal px-2.5 py-3.5 hover:bg-gray-200"
+                : "text colorKurumsal px-2.5 py-3.5 hover:bg-gray-200 border-b-2"
             }`}
             onClick={() => handleClick("arge")}
           >
@@ -235,7 +235,7 @@ const Body = () => {
             className={` cursor-pointer ${
               selected === "kurumsal"
                 ? "rounded-t px-2.5 py-3.5 text-gray-700 text border-x-2 border-t-2"
-                : "text colorKurumsal px-2.5 py-3.5 hover:bg-gray-200"
+                : "text colorKurumsal px-2.5 py-3.5 hover:bg-gray-200 border-b-2"
             }`}
             onClick={() => handleClick("kurumsal")}
           >

@@ -31,7 +31,7 @@ const Anasayfa = ({ sirketler }) => {
     <div className="mt-0.5">
       <div className=" bg-[url('https://akarebilisim.com.tr/images/orta.jpg')] bg-cover border-b-2 border-slate-300 ">
         <div className="flex container mx-auto justify-center photoDiv">
-          <div className="flex h-1/2 photoDivImg items-center justify-center">
+          <div className="flex h-1/2 py-6 photoDivImg items-center justify-center">
             <img
               src="https://akarebilisim.com.tr/images/cloud-servers.gif"
               className="min-h-[80%] h-[50%] "

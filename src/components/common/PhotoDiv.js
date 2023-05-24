@@ -10,7 +10,7 @@ const PhotoDiv = ({ title, title1, img }) => {
         </div>
         <div className="w-[65%] flex photoImg my-8 photoDiv items-center ">
           <img
-            className="min-h-[75%] h-[75%] min-w-[300px] w-[75%]"
+            className="min-h-[75%]  min-w-[300px] w-[75%]"
             src={img}
             alt=""
           />
