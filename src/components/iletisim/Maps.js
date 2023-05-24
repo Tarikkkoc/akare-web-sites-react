@@ -2,7 +2,7 @@ import React from "react";
 import Map from "../../img/maps1.png";
 const Maps = () => {
   return (
-    <div className="w-[100%] bg-[url('https://akarebilisim.com.tr/images/bg.png')] flex justify-center py-5">
+    <div className="w-[100%] bg-[url('https://akarebilisim.com.tr/images/bg.png')] flex justify-center py-8">
       <div className="w-[60%] border-2 p-0.5 bg-slate-100">
         <a
           target="_blank"
