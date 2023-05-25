@@ -12,6 +12,7 @@ import AKareCloud from "../sirketler/AKareCloud";
 import AKarePentest from "../sirketler/AKarePentest";
 import AKareIsg from "../sirketler/AKareIsg";
 import AKareEdu from "../sirketler/AKareEdu";
+import Extra from "../common/Extra";
 
 function App() {
   const sirketler = [
@@ -61,6 +62,7 @@ function App() {
         <Route path="/akarepentest" element={<AKarePentest />} />
         <Route path="/akareisg" element={<AKareIsg />} />
         <Route path="/akareedu" element={<AKareEdu />} />
+        <Route path="/extra" element={<Extra />} />
       </Routes>
 
       <Footer sirketler={sirketler} />

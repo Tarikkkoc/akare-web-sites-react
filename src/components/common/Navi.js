@@ -26,9 +26,9 @@ const Navi = () => {
     };
   }, []);
   return (
-    <div className="shadow-lg z-10 bg-slate-100 border-t-2 border-red-500 sticky top-0">
+    <div className="shadow-lg z-10 bg-slate-100 border-t-2 border-red-500 sticky top-0 w-full">
       <div className="flex header-nav p items-center container mx-auto">
-        <div className="flex justify-center min-w-[45%] w-[50%] ">
+        <div className="flex justify-center min-w-[40%] w-[ %] ">
           <Link to="/">
             <img
               className="align-middle w-[100%] min-w-[100%] min-h-[60px] h-10  "
@@ -37,7 +37,7 @@ const Navi = () => {
             />
           </Link>
         </div>
-        <ul className="flex w-[60%] font-dosis font-medium text-sm menu-item mb-3 px-1 nav mr-3 justify-start text-gray-500 shrink-1">
+        <ul className="flex w-[75%] min-w-[55%] font-dosis font-medium text-sm menu-item mb-3 px-1 nav mr-3 justify-start text-gray-500 shrink-1">
           <Link to="/">
             <li className="hover:text-white p-3.5 font-medium hover:cursor-pointer hover:bg-gray-400 cursor-pointer">
               ANA SAYFA
@@ -61,6 +61,11 @@ const Navi = () => {
           <Link to="/iletisim">
             <li className="hover:text-white p-3.5 hover:cursor-pointer grid place-items-center hover:bg-gray-400 cursor-pointer">
               ILETISIM
+            </li>
+          </Link>
+          <Link to="/extra">
+            <li className="hover:text-white p-3.5 hover:cursor-pointer grid place-items-center hover:bg-gray-400 cursor-pointer">
+              EXTRA
             </li>
           </Link>
         </ul>
@@ -90,6 +95,9 @@ const Navi = () => {
                 </Link>
                 <Link to="/iletisim" onClick={handleButtonClick}>
                   <li className="py-2.5">İLETİŞİM</li>
+                </Link>
+                <Link to="/extra" onClick={handleButtonClick}>
+                  <li className="py-2.5">EXTRA</li>
                 </Link>
               </ul>
             </div>

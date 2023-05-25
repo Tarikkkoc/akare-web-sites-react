@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Sirketler from "./Sirketler";
 import Hakkimizda from "./Hakkimizda";
+import WeatherApp from "../common/WeatherApp";
+import CurrencyExchangeApp from "../common/CurrencyExchangeApp ";
 
 const Anasayfa = ({ sirketler }) => {
   const [matrixRows, setMatrixRows] = useState([]);
@@ -55,6 +57,8 @@ const Anasayfa = ({ sirketler }) => {
         akilliCozumlerImg="https://akarebilisim.com.tr/images/rating_system.png"
         akilliCozumlerTitle="Akıllı Çözümler"
       />
+      <WeatherApp />
+      <CurrencyExchangeApp />
     </div>
   );
 };
