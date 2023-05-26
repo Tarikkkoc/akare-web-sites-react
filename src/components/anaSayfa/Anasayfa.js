@@ -57,8 +57,6 @@ const Anasayfa = ({ sirketler }) => {
         akilliCozumlerImg="https://akarebilisim.com.tr/images/rating_system.png"
         akilliCozumlerTitle="Akıllı Çözümler"
       />
-      <WeatherApp />
-      <CurrencyExchangeApp />
     </div>
   );
 };
