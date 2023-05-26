@@ -15,8 +15,12 @@ const CurrencyRates = () => {
         console.log(result);
       });
   }, []);
-  if (Object.keys(data).length === 0) {
-    return <div>Loading...</div>;
+  if (Object.keys(data).length === 0 || !data.rates) {
+    return (
+      <div>
+        This request has been blocked; the content must be served over HTTPS.
+      </div>
+    );
   }
 
   const TRY = data.rates.TRY;
