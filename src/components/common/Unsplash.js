@@ -17,20 +17,20 @@ const Unsplash = () => {
       });
   };
   return (
-    <div className="flex flex-col gap-2 hakkimizdaDesign justify-cnter items-center">
-      <h1 className="colorOrange text-3xl">Gif Ara</h1>
+    <div className="flex flex-col gap-2 w-[30%] min-w-[30%] hakkimizdaDesign justify-cnter items-center">
+      <h1 className="colorOrange text-3xl">Search Gif</h1>
       <div className="flex gap-2 hakkimizdaDesign justify-center items-center">
         <input
           className="p-2 iletisim1 border border-solid border-gray-300 rounded-md text focus:outline-none focus:ring-1 focus:ring-blue-500 focus:shadow-lg"
           type="text"
-          placeholder="Gif ara.."
+          placeholder="Topic"
           onChange={(e) => setTerm(e.target.value)}
         />
         <button
           className="borderSubmit hover:bg-sky-200 p-0.5 rounded-md text cursor-pointer"
           onClick={getData}
         >
-          Ara
+          Search
         </button>
       </div>
       {gif.data && gif.data.length > 0
