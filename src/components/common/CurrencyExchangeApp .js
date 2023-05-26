@@ -15,6 +15,13 @@ const CurrencyRates = () => {
         console.log(result);
       });
   }, []);
+  if (Object.keys(data).length === 0) {
+    return <div>Loading...</div>;
+  }
+
+  const TRY = data.rates.TRY;
+  const USD = data.rates.USD;
+  const GBP = data.rates.GBP;
 
   return (
     <div className="flex flex-col gap-2 justfy-center w-[30%] min-w-[30%] items-center">
@@ -23,19 +30,19 @@ const CurrencyRates = () => {
         <span>
           <strong>EUR/TRY: </strong>
         </span>
-        {data.rates.TRY}
+        {TRY}
       </div>
       <div>
         <span>
           <strong>USD/TRY: </strong>
         </span>
-        {data.rates.TRY / data.rates.USD}
+        {TRY / USD}
       </div>
       <div>
         <span>
           <strong>GBP/TRY: </strong>
         </span>
-        {data.rates.TRY / data.rates.GBP}
+        {TRY / GBP}
       </div>
     </div>
   );
