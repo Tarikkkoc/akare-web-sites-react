@@ -49,36 +49,48 @@ const WeatherApp = () => {
         </button>
       </div>
       {typeof weather.main !== "undefined" ? (
-        <div className="w-[80%] min-w-[80%] rounded-lg flex flex-col gap-2 items-center bg-[url('https://png.pngtree.com/background/20210714/original/pngtree-white-cloud-on-blue-sky-weather-background-picture-image_1229456.jpg')]">
+        <div className="w-[80%] min-w-[80%] rounded-lg flex flex-col gap-2 items-center bgd-[url('https://png.pngtree.com/background/20210714/original/pngtree-white-cloud-on-blue-sky-weather-background-picture-image_1229456.jpg')]">
           {/* <p className="text-xl">{weather.name}</p>
           <p className="text-xl">{weather.main.temp}°C</p>
           <p className="text-xl">{weather.weather[0].main}</p>
           <p className="text-xl">({weather.weather[0].description})</p> */}
-          <div className="w-[80%] min-w-[80%] rounded-lg flex flex-col gap-2 items-center ">
-            <table className="table-auto min-w-[80%]">
+          <div className="container mx-auto flex justify-center">
+            <table className="border border-gray-300">
               <thead>
                 <tr>
-                  <th className="px-4 py-2 text">Temp</th>
-                  <th className="px-4 py-2 text">Weather</th>
-                  <th className="px-4 py-2 text">Description</th>
+                  <th className="border-b border-gray-300 px-4 py-2 text">
+                    Temp
+                  </th>
+                  <th className="border-b border-gray-300 px-4 py-2 text">
+                    Weather
+                  </th>
+                  <th className="border-b border-gray-300 px-4 py-2 text">
+                    Description
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border-2 px-4 py-2 text-center text">
+                  <td className="border-b border-gray-300 px-4 py-2 text">
                     {weather.main.temp}°C
                   </td>
-                  <td className="border-2 px-4 py-2 text-center text">
+                  <td className="border-b border-gray-300 px-4 py-2 text">
                     {weather.weather[0].main}
                   </td>
-                  <td className="border-2 px-4 py-2 text-center text">
+                  <td className="border-b border-gray-300 px-4 py-2 text">
                     {weather.weather[0].description}
+                  </td>
+                </tr>
+                <tr>
+                  <td colSpan="3">
+                    <div className="grid place-items-center">
+                      <h1 className="text-2xl">{weather.name}</h1>
+                    </div>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <h1 className="text-2xl">{weather.name}</h1>
         </div>
       ) : (
         ""

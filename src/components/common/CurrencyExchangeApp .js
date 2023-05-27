@@ -7,15 +7,16 @@ const CurrencyRates = () => {
 
   useEffect(() => {
     fetch(
-      "http://data.fixer.io/api/latest?access_key=17c5b153f2aa4e8f38ebf38278d4588f"
+      "https://v6.exchangerate-api.com/v6/80b7971524669bfdaceb2ea8/latest/USD"
     )
       .then((res) => res.json())
       .then((result) => {
         setData(result);
         console.log(result);
+        console.log(data);
       });
   }, []);
-  if (Object.keys(data).length === 0 || !data.rates) {
+  if (Object.keys(data).length === 0 || !data.conversion_rates) {
     return (
       <div>
         This request has been blocked; the content must be served over HTTPS.
@@ -23,30 +24,45 @@ const CurrencyRates = () => {
     );
   }
 
-  const TRY = data.rates.TRY;
-  const USD = data.rates.USD;
-  const GBP = data.rates.GBP;
+  const TRY = data.conversion_rates.TRY;
+  const USD = data.conversion_rates.USD;
+  const GBP = data.conversion_rates.GBP;
+  const EUR = data.conversion_rates.EUR;
 
   return (
     <div className="flex flex-col gap-2 justfy-center w-[30%] min-w-[30%] items-center">
       <h1 className="colorOrange text-3xl text-center">Currency Rates</h1>
-      <div>
-        <span>
-          <strong>EUR/TRY: </strong>
-        </span>
-        {TRY}
-      </div>
-      <div>
-        <span>
-          <strong>USD/TRY: </strong>
-        </span>
-        {TRY / USD}
-      </div>
-      <div>
-        <span>
-          <strong>GBP/TRY: </strong>
-        </span>
-        {TRY / GBP}
+      <div className="flex flex-col">
+        <div class="container mx-auto">
+          <table class="border border-gray-300">
+            <thead>
+              <tr>
+                <th class="border-b border-gray-300 px-4 py-2">Kur</th>
+                <th class="border-b border-gray-300 px-4 py-2">Fiyat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-b border-gray-300 font-bold px-4 py-2">
+                  EUR/TRY:
+                </td>
+                <td class="border-b border-gray-300 px-4 py-2">{TRY / EUR}</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-300 font-bold px-4 py-2">
+                  USD/TRY:
+                </td>
+                <td class="border-b border-gray-300 px-4 py-2">{TRY / USD}</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-300 font-bold px-4 py-2">
+                  GBP/TRY:
+                </td>
+                <td class="border-b border-gray-300 px-4 py-2">{TRY / GBP}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
