@@ -34,8 +34,8 @@ const CurrencyRates = () => {
 
   function formatNumber(number) {
     return number.toLocaleString(undefined, {
-      maximumFractionDigits: 2,
-      minimumFractionDigits: 2,
+      maximumFractionDigits: 4,
+      minimumFractionDigits: 4,
     });
   }
 
