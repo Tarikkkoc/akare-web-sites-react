@@ -37,8 +37,10 @@ const CurrencyRates = () => {
           <table class="border border-gray-300">
             <thead>
               <tr>
-                <th class="border-b border-gray-300 px-4 py-2">Kur</th>
-                <th class="border-b border-gray-300 px-4 py-2">Fiyat</th>
+                <th class="border-b border-gray-300 px-4 py-2">
+                  Currency Rate
+                </th>
+                <th class="border-b border-gray-300 px-4 py-2">Price</th>
               </tr>
             </thead>
             <tbody>
